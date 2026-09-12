@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Spark – Entrepreneurship Batch | Nitya Sundaram Academy</title>
+    <meta name="description" content="Startup Spark: A comprehensive entrepreneurship and innovation program for future business leaders, innovators, and changemakers at Nitya Sundaram Academy.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Typography */
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-space { font-family: 'Space Grotesk', sans-serif; }
+
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Custom Gradients & Shadows */
+        .gradient-spark {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #eab308 100%);
+        }
+        
+        .text-gradient-spark {
+            background: linear-gradient(to right, #1e3a8a, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .text-gradient-fire {
+            background: linear-gradient(to right, #ea580c, #eab308);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .neo-brutal-card {
+            background: white;
+            border: 3px solid #1e293b;
+            box-shadow: 6px 6px 0px #1e293b;
+            transition: all 0.3s ease;
+        }
+        .neo-brutal-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0px #1e293b;
+        }
+        
+        .neo-brutal-btn {
+            background: #eab308;
+            border: 3px solid #1e293b;
+            box-shadow: 4px 4px 0px #1e293b;
+            transition: all 0.2s ease;
+        }
+        .neo-brutal-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #1e293b;
+        }
+        .neo-brutal-btn:hover {
+            background: #fde047;
+        }
+
+        /* Abstract Patterns */
+        .pattern-dots {
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 20px 20px;
+        }
+        
+        .pattern-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 58, 138, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 58, 138, 0.05) 1px, transparent 1px);
+        }
+
+        /* Animations */
+        @keyframes float-rocket {
+            0%, 100% { transform: translateY(0) rotate(45deg); }
+            50% { transform: translateY(-20px) rotate(45deg); }
+        }
+        .animate-rocket {
+            animation: float-rocket 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-bulb {
+            0%, 100% { filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.6)); }
+            50% { filter: drop-shadow(0 0 35px rgba(234, 179, 8, 1)); }
+        }
+        .animate-bulb {
+            animation: pulse-bulb 3s infinite;
+        }
+    </style>
+</head>
+
+<body class="font-space antialiased selection:bg-yellow-400 selection:text-slate-900">
+
+<!-- Top Contact Bar -->
+    <div class="bg-slate-200 text-black font-bold py-0.5 md:py-2 px-4">
+        <div
+            class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-6">
+            <!-- Contact Info -->
+            <div class="flex  items-center justify-center gap-3 md:gap-6">
+                <a href="tel:+919876543210" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">+91 98765 43210</span>
+                </a>
+                <a href="mailto:info@nityasundaramacademy.com"
+                    class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">info@nityasundaram.com</span>
+                </a>
+            </div>
+
+            <!-- Quick Links & Social Icons -->
+            <div class="flex items-center  gap-4 md:gap-6">
+                <!-- Quick Links -->
+
+                <div class="hidden md:flex items-center gap-4 text-xs md:text-sm">
+                    <a href="#" class="hover:text-[#f9bc60] transition">Admissions</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Gallery</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Careers</a>
+                </div>
+
+                <!-- Social Icons -->
+
+                <div class="flex items-center gap-3">
+                    <h1 class="text-sm md:text-sm">Follow on :</h1>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50  w-full border-slate-200 bg-white backdrop-blur">
+
+
+
+
+        <div class="flex flex-col md:flex-row  md:items-center justify-between  md:py-2">
+            <a href="#" class="flex items-center md:items-start md:h-20  z-10 md:gap-3 px-1 md:px-2">
+                <img src="../images/Remove background project.png" alt="Logo"
+                    class=" size-16 md:size-22 rounded-full object-cover mx-1 ring-emerald-200" />
+                <div class="my-1 md:my-0 text-center md:text-start w-full">
+                    <h1 class="text-3xl  font-extrabold tracking-wide text-emerald-700 md:text-5xl font-poppins"
+                        id="nameBox">
+                        NITYA SUNDARAM
+                    </h1>
+
+                    <p class="text-sm font-bold text-black md:text-sm md:mt-2">
+                        UTTARESWAR , SORO , BALASORE
+                    </p>
+                </div>
+            </a>
+
+            <nav class=" bg-emerald-50 md:bg-white   w-full  md:w-3xl  ">
+                <ul
+                    class="flex items-center justify-around text-xs font-bold py-2  text-emerald-700 md:gap-3 md:text-lg xl:text-xl font-poppins ">
+                    <li class=" ">
+                        <a href="../index.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="../courses.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="../events.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../gallery.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="../productions.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500  bg-clip-text text-transparent animate-gradient  ">PRODUCTIONS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══ HERO SECTION ═══ -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-slate-50 pattern-grid border-b-2 border-slate-900">
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 right-10 w-64 h-64 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <!-- Hero Content -->
+                <div class="w-full lg:w-[55%] text-center lg:text-left">
+                    <div class="inline-block mb-4 border-2 border-slate-900 bg-white px-4 py-1.5 rounded-full shadow-[4px_4px_0px_#1e293b] rotate-[-2deg]">
+                        <span class="text-xs md:text-sm font-bold text-blue-700 tracking-widest uppercase">For Future Entrepreneurs</span>
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-8xl font-black font-montserrat uppercase leading-[0.9] tracking-tighter mb-6">
+                        <span class="text-slate-900 block">STARTUP</span>
+                        <span class="text-gradient-fire block mt-2 drop-shadow-sm">SPARK</span>
+                    </h1>
+                    
+                    <div class="bg-blue-900 text-white font-bold inline-block px-6 py-2 rounded-sm mb-6 uppercase tracking-widest text-sm md:text-base border-2 border-slate-900 shadow-[4px_4px_0px_#facc15]">
+                        Sunday Entrepreneurship Excellence Batch
+                    </div>
+                    
+                    <p class="text-xl md:text-2xl font-bold text-slate-700 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        <span class="text-blue-700">Dream.</span> 
+                        <span class="text-yellow-600">Build.</span> 
+                        <span class="text-orange-600">Innovate.</span> 
+                        <span class="text-slate-900">Lead.</span>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20want%20to%20enroll%20in%20the%20Startup%20Spark%20batch." target="_blank"
+                           class="neo-brutal-btn px-8 py-4 text-slate-900 font-black uppercase tracking-wider rounded-sm text-lg w-full sm:w-auto flex items-center justify-center gap-2">
+                            <span>Ignite Your Idea</span>
+                            <span class="text-2xl">🚀</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Graphic -->
+                <div class="w-full lg:w-[45%] relative mt-12 lg:mt-0">
+                    <div class="relative w-full aspect-square max-w-[500px] mx-auto">
+                        <!-- Abstract Background Shape -->
+                        <div class="absolute inset-0 bg-blue-100 rounded-full transform rotate-12 scale-105 border-4 border-slate-900 border-dashed"></div>
+                        <div class="absolute inset-0 bg-yellow-100 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] border-4 border-slate-900 animate-[spin_20s_linear_infinite]"></div>
+                        
+                        <!-- Main Image -->
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Students collaborating on a startup idea" class="absolute inset-4 object-cover rounded-full border-4 border-slate-900 shadow-xl z-10">
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-10 -right-5 text-7xl z-20 animate-bulb drop-shadow-xl">💡</div>
+                        <div class="absolute -bottom-5 -left-10 text-6xl z-20 animate-rocket drop-shadow-xl">🚀</div>
+                        <div class="absolute top-1/2 -right-12 bg-white border-2 border-slate-900 p-3 rounded-lg shadow-[4px_4px_0px_#1e293b] font-bold text-sm z-20 rotate-12">
+                            💰 Funding
+                        </div>
+                        <div class="absolute bottom-10 -right-4 bg-white border-2 border-slate-900 p-3 rounded-lg shadow-[4px_4px_0px_#1e293b] font-bold text-sm z-20 -rotate-6">
+                            📈 Growth
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT THE PROGRAM ═══ -->
+    <section class="py-20 px-4 bg-slate-900 text-white relative border-b-4 border-yellow-400">
+        <div class="pattern-dots absolute inset-0 opacity-10"></div>
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-4 reveal-up">
+                <div class="bg-blue-600 text-white font-black text-2xl md:text-4xl p-8 rounded-2xl border-4 border-slate-900 shadow-[8px_8px_0px_#eab308] transform -rotate-2">
+                    ABOUT THE PROGRAM
+                </div>
+            </div>
+            
+            <div class="lg:col-span-8 space-y-6 text-slate-300 text-lg reveal-up">
+                <p>
+                    <strong class="text-white">Startup Spark</strong> is a comprehensive entrepreneurship and innovation program specially designed for students who dream of becoming entrepreneurs, business leaders, innovators, and changemakers.
+                </p>
+                <p>
+                    This practical, project-based learning program introduces students to the exciting world of startups, business development, innovation, finance, leadership, technology, marketing, and problem-solving.
+                </p>
+                <p>
+                    Students will learn how successful companies are built, how to identify business opportunities, validate ideas, manage money, build teams, and confidently present their ideas. The program combines real-world business knowledge with hands-on activities, startup simulations, group projects, case studies, and mentorship.
+                </p>
+                
+                <div class="bg-yellow-400 text-slate-900 p-6 rounded-xl border-2 border-slate-900 font-bold text-xl md:text-2xl font-montserrat shadow-[4px_4px_0px_#1e293b] mt-8">
+                    "More than just a business class, Startup Spark is a journey of innovation, leadership, creativity, financial intelligence, and building the future."
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ═══ PROGRAM OBJECTIVES (CHECKLIST) ═══ -->
+    <section class="py-20 px-4 bg-white border-b-2 border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black font-montserrat text-center text-slate-900 mb-16 uppercase tracking-tight reveal-up">
+                Program <span class="text-purple-600 border-b-4 border-purple-600">Objectives</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 reveal-up">
+                <!-- Objective Item -->
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Develop an entrepreneurial mindset.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Develop communication and public speaking skills.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Build creative thinking and innovation skills.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Build confidence in presenting business ideas.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Learn problem-solving using design thinking.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Learn financial planning and money management.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Understand how startups are created.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Encourage social entrepreneurship and innovation.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Improve leadership and teamwork.</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-slate-50 transition border-2 border-transparent hover:border-slate-200">
+                    <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg border-2 border-purple-600 shrink-0">✓</div>
+                    <p class="font-bold text-slate-700 text-lg">Prepare students for future business opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ COURSE INCLUDES (6 MASSIVE PILLARS) ═══ -->
+    <section class="py-24 px-4 bg-slate-50 border-b-2 border-slate-900 pattern-grid">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16 reveal-up">
+                <div class="inline-flex items-center justify-center gap-4 bg-slate-900 text-white px-8 py-3 rounded-full border-4 border-yellow-400 shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
+                    <span class="text-2xl">🎓</span>
+                    <h2 class="text-3xl font-black font-montserrat uppercase tracking-widest">COURSE INCLUDES</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-up">
+                
+                <!-- 1. Fundamentals -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-blue-600 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">💡</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">1. Entrepreneurship<br>Fundamentals</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>What is Entrepreneurship?</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Entrepreneur vs Employee Mindset</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Startup Ecosystem</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Types of Businesses</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Identifying Opportunities</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Solving Real Problems</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Business Ethics</li>
+                            <li class="flex gap-3"><span class="text-blue-600">•</span>Goal Setting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2. Startup Building -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-green-600 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">🚀</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">2. Startup<br>Building</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Idea Generation</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Problem Validation</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Market Research</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Customer Discovery</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Business Model Canvas</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Product Development</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>MVP (Minimum Viable Product)</li>
+                            <li class="flex gap-3"><span class="text-green-600">•</span>Branding Basics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. Financial Literacy -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-orange-500 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">💰</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">3. Financial<br>Literacy</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Money Management</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Saving & Investing</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Budget Planning</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Revenue & Profit</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Cost Management</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Pricing Strategy</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Banking Basics</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Digital Payments</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Intro to Stock Market</li>
+                            <li class="flex gap-3"><span class="text-orange-600">•</span>Personal Finance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. Business Growth -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-rose-500 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">📈</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">4. Business<br>Growth</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Sales Fundamentals</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Marketing Basics</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Digital Marketing</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Social Media Branding</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Customer Service</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Business Communication</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Negotiation Skills</li>
+                            <li class="flex gap-3"><span class="text-rose-600">•</span>Business Expansion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5. Tech & Innovation -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-indigo-600 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">💻</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">5. Technology &<br>Innovation</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>AI for Business</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Future Technologies</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Automation</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Business Software</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Website & E-commerce</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Mobile Apps</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Digital Tools</li>
+                            <li class="flex gap-3"><span class="text-indigo-600">•</span>Productivity Systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6. Project Development -->
+                <div class="neo-brutal-card rounded-2xl overflow-hidden flex flex-col h-full">
+                    <div class="bg-purple-600 p-4 border-b-4 border-slate-900 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full border-2 border-slate-900 flex items-center justify-center text-2xl shrink-0 shadow-[2px_2px_0px_#1e293b]">⚙️</div>
+                        <h3 class="font-black text-white text-lg uppercase leading-tight">6. Project<br>Development</h3>
+                    </div>
+                    <div class="p-6 bg-white flex-grow">
+                        <ul class="space-y-3 font-bold text-sm text-slate-700">
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Problem Identification</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Design Thinking</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Prototype Development</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Team Projects</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Innovation Challenges</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Business Presentations</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Startup Pitching</li>
+                            <li class="flex gap-3"><span class="text-purple-600">•</span>Product Demonstration</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ MULTI-BENEFIT AND OUTCOMES GRID ═══ -->
+    <section class="py-20 px-4 bg-white border-b-2 border-slate-900 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Left: 5 Benefit Categories -->
+                <div class="reveal-up">
+                    <div class="inline-block bg-slate-900 text-yellow-400 font-black px-6 py-2 rounded-sm border-2 border-yellow-400 mb-10 text-xl shadow-[4px_4px_0px_#facc15] transform -rotate-1">
+                        ★ BENEFITS OF THE PROGRAM
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- Entrepreneurial -->
+                        <div class="flex gap-4 p-4 rounded-xl bg-purple-50 border border-purple-200">
+                            <div class="text-4xl text-purple-600 shrink-0">🧠</div>
+                            <div>
+                                <h4 class="font-black text-purple-900 mb-2">ENTREPRENEURIAL BENEFITS</h4>
+                                <p class="text-sm font-bold text-slate-600">Builds entrepreneurial thinking, develops innovation skills, encourages calculated risk-taking, creates problem solvers, improves decision-making ability.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Personal -->
+                        <div class="flex gap-4 p-4 rounded-xl bg-blue-50 border border-blue-200">
+                            <div class="text-4xl text-blue-600 shrink-0">🧍</div>
+                            <div>
+                                <h4 class="font-black text-blue-900 mb-2">PERSONAL DEVELOPMENT</h4>
+                                <p class="text-sm font-bold text-slate-600">Improves confidence, develops communication skills, builds leadership qualities, encourages creativity, enhances teamwork, develops resilience.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Financial -->
+                        <div class="flex gap-4 p-4 rounded-xl bg-green-50 border border-green-200">
+                            <div class="text-4xl text-green-600 shrink-0">💰</div>
+                            <div>
+                                <h4 class="font-black text-green-900 mb-2">FINANCIAL BENEFITS</h4>
+                                <p class="text-sm font-bold text-slate-600">Understands money management, learns budgeting, investment awareness, financial planning, smart spending habits, wealth creation mindset.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Career -->
+                        <div class="flex gap-4 p-4 rounded-xl bg-orange-50 border border-orange-200">
+                            <div class="text-4xl text-orange-600 shrink-0">💼</div>
+                            <div>
+                                <h4 class="font-black text-orange-900 mb-2">CAREER BENEFITS</h4>
+                                <p class="text-sm font-bold text-slate-600">Startup Readiness, Future Leadership, College Innovation Projects, Internship Preparations, Business Competitions, Career Exploration.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Life Skills -->
+                        <div class="flex gap-4 p-4 rounded-xl bg-rose-50 border border-rose-200">
+                            <div class="text-4xl text-rose-600 shrink-0">🤝</div>
+                            <div>
+                                <h4 class="font-black text-rose-900 mb-2">LIFE SKILLS</h4>
+                                <p class="text-sm font-bold text-slate-600">Public Speaking, Networking, Negotiation, Strategic Thinking, Project Management, Professional Behaviour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Learning Outcomes & Info -->
+                <div class="reveal-up space-y-10">
+                    
+                    <!-- Learning Outcomes -->
+                    <div>
+                        <div class="inline-block bg-slate-900 text-blue-400 font-black px-6 py-2 rounded-sm border-2 border-blue-400 mb-8 text-xl shadow-[4px_4px_0px_#60a5fa] transform rotate-1">
+                            🏆 LEARNING OUTCOMES
+                        </div>
+                        <ul class="space-y-4 font-bold text-slate-700 bg-slate-50 p-8 rounded-2xl border-2 border-slate-200">
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Identify real-world problems and opportunities.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Develop innovative business ideas.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Build a simple business model.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Create and present startup pitches.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Understand finance and business fundamentals.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Build confidence in leadership.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Work effectively in teams.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Use AI and digital tools for business.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Design innovative products and services.</li>
+                            <li class="flex gap-3 items-center"><span class="text-blue-600 text-xl">✔</span>Develop entrepreneurial thinking for life.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Batch Information -->
+                    <div class="neo-brutal-card rounded-2xl p-8 relative overflow-hidden bg-yellow-400">
+                        <div class="absolute -right-10 -bottom-10 text-[150px] opacity-20 transform -rotate-45">🚀</div>
+                        <h3 class="text-2xl font-black font-montserrat mb-6 uppercase border-b-4 border-slate-900 pb-2 inline-block">📅 Batch Information</h3>
+                        <div class="space-y-4 font-bold text-lg relative z-10">
+                            <div class="flex justify-between border-b-2 border-slate-900/20 pb-2">
+                                <span class="text-slate-700">Batch Name:</span>
+                                <span class="text-slate-900 font-black">Startup Spark</span>
+                            </div>
+                            <div class="flex justify-between border-b-2 border-slate-900/20 pb-2">
+                                <span class="text-slate-700">Schedule:</span>
+                                <span class="text-slate-900 font-black">Every Sunday</span>
+                            </div>
+                            <div class="flex justify-between border-b-2 border-slate-900/20 pb-2">
+                                <span class="text-slate-700">Duration:</span>
+                                <span class="text-slate-900 font-black">2 Hours</span>
+                            </div>
+                            <div class="pt-2">
+                                <span class="text-slate-700 block mb-1">Mode:</span>
+                                <span class="text-slate-900 font-black text-base">Interactive + Practical + Project-Based</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SPECIAL ACTIVITIES & SUCCESS STORIES ═══ -->
+    <section class="py-20 px-4 bg-slate-100 border-b-2 border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                
+                <!-- Special Activities (Takes up 2 columns) -->
+                <div class="lg:col-span-2 reveal-up">
+                    <h2 class="text-2xl md:text-3xl font-black font-montserrat text-slate-900 mb-8 uppercase tracking-wide flex items-center gap-3">
+                        <span class="text-yellow-500 text-3xl">★★★</span> SPECIAL ACTIVITIES
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Activity items -->
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🚀</div><p class="text-xs font-bold">Startup Idea Challenge</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🦈</div><p class="text-xs font-bold">Shark Tank Style Pitch</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">📊</div><p class="text-xs font-bold">Business Model Comp.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">💰</div><p class="text-xs font-bold">Financial Literacy Games</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">💡</div><p class="text-xs font-bold">Innovation Workshops</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🤖</div><p class="text-xs font-bold">AI Tools for Entrepreneurs</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🤝</div><p class="text-xs font-bold">Team Startup Projects</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">👑</div><p class="text-xs font-bold">Leadership Games</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🏢</div><p class="text-xs font-bold">Company Visits</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🎤</div><p class="text-xs font-bold">Guest Entrepreneur Sessions</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">📝</div><p class="text-xs font-bold">Case Study Discussions</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🧠</div><p class="text-xs font-bold">Business Quiz</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">🌐</div><p class="text-xs font-bold">Networking Events</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition">
+                            <div class="text-3xl mb-2">📈</div><p class="text-xs font-bold">Business Plan Presentation</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border-2 border-slate-200 text-center hover:border-blue-500 hover:shadow-lg transition md:col-span-2">
+                            <div class="text-3xl mb-2">🎪</div><p class="text-xs font-bold">Annual Startup Expo</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Startup Toolkit -->
+                    <div class="mt-12 neo-brutal-card p-6 rounded-2xl bg-white">
+                        <h3 class="text-xl font-black font-montserrat text-slate-900 mb-6 uppercase flex items-center gap-2">
+                            <span class="text-2xl">🧰</span> STARTUP TOOLKIT (Students will learn)
+                        </h3>
+                        <div class="flex flex-wrap gap-3 font-bold text-sm text-slate-700">
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Canva for Branding</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">ChatGPT & AI Tools</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Google Workspace</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Business Model Canvas</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">SWOT Analysis</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Lean Startup Framework</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Pitch Deck Creation</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Digital Marketing Tools</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Excel for Finance</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-full border border-slate-300">Productivity Apps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Stories (Takes up 1 column) -->
+                <div class="lg:col-span-1 reveal-up">
+                    <div class="neo-brutal-card rounded-2xl h-full flex flex-col overflow-hidden">
+                        <div class="bg-red-600 p-4 text-center border-b-4 border-slate-900">
+                            <h2 class="text-2xl font-black font-montserrat text-white uppercase flex justify-center items-center gap-2">
+                                <span>⭐</span> SUCCESS STORIES
+                            </h2>
+                        </div>
+                        <div class="p-6 bg-white flex-grow flex flex-col">
+                            <p class="font-bold text-sm text-slate-700 mb-6 border-b-2 border-slate-100 pb-4">
+                                Students will explore inspiring journeys of world-changing entrepreneurs including:
+                            </p>
+                            <ul class="space-y-3 font-bold text-sm flex-grow">
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Steve Jobs (Apple)</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Bill Gates (Microsoft)</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Elon Musk (Tesla & SpaceX)</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Narayana Murthy (Infosys)</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Ratan Tata</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Dhirubhai Ambani</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Kiran Mazumdar-Shaw</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Falguni Nayar</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Sridhar Vembu</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Nikhil Kamath</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Deepinder Goyal</li>
+                                <li class="flex items-center gap-2"><span class="text-blue-600">✓</span>Byju Raveendran</li>
+                            </ul>
+                            
+                            <div class="mt-8 text-center bg-yellow-100 p-4 rounded-xl border border-yellow-300">
+                                <p class="text-orange-600 font-bold italic">Learn how ordinary ideas became extraordinary companies.</p>
+                                <div class="text-6xl mt-4">🏆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA SECTION ═══ -->
+    <section class="py-24 px-4 bg-slate-900 relative overflow-hidden border-t-8 border-yellow-400 text-center">
+        <!-- Abstract bg element -->
+        <div class="absolute inset-0 pattern-dots opacity-20"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600 rounded-full mix-blend-screen filter blur-[150px] opacity-20"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10 reveal-up">
+            <h2 class="text-3xl md:text-5xl font-black font-montserrat text-white mb-8 leading-tight">
+                Join the <span class="text-yellow-400">Startup Spark</span> Sunday Special Batch and discover how great ideas become successful businesses.
+            </h2>
+            <p class="text-lg text-slate-300 font-bold mb-12 max-w-3xl mx-auto leading-relaxed">
+                Learn entrepreneurship, innovation, financial intelligence, leadership, technology, project development, and startup building through practical activities, inspiring success stories, mentorship, and real-world business projects.
+            </p>
+            
+            <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20want%20to%20enroll%20in%20the%20Startup%20Spark%20batch." target="_blank"
+               class="neo-brutal-btn inline-flex items-center justify-center gap-3 px-12 py-5 text-slate-900 font-black uppercase tracking-widest rounded-sm text-xl shadow-[8px_8px_0px_#f8fafc] hover:shadow-[4px_4px_0px_#f8fafc] hover:translate-y-1 hover:translate-x-1 transition-all">
+                <span>BECOME A CHANGEMAKER</span>
+                <span class="text-2xl">🔥</span>
+            </a>
+            
+            <div class="mt-16 pt-10 border-t border-slate-700">
+                <h3 class="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 uppercase tracking-widest font-montserrat italic">
+                    Ignite Your Ideas. Build Your Future.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-white text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">About Us</h3>
+                    <p class="text-black text-sm leading-relaxed mb-4">
+                        Nitya Sundaram Academy is dedicated to providing holistic education and personality development
+                        for students.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-black hover:text-[#f9bc60] transition text-sm">Home</a>
+                        </li>
+                        <li><a href="../about.html" class="text-black hover:text-[#f9bc60] transition text-sm">About Us</a>
+                        </li>
+                        <li><a href="../programs.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Programs</a></li>
+                        <li><a href="../courses.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Courses</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Events</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Personality
+                                Development</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Career Guidance</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Skill Training</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Academic Support</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Mentorship
+                                Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Contact Us</h3>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 flex-shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Uttareswar, Soro, Balasore, Odisha <br>(Upper Floor of Axis Bank, NH-16)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div>
+                                <a href="tel:+918637200635" class="hover:text-[#f9bc60] transition block">+91
+                                    8637200635</a>
+                                <a href="tel:+917735481329" class="hover:text-[#f9bc60] transition block">+91
+                                    7735481329</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:info@nityasundaramacademy.com"
+                                class="hover:text-[#f9bc60] transition break-all">info@nityasundaramacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-600 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-black">
+                        &copy; 2026 Nitya Sundaram Academy. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Privacy Policy</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Terms of Service</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal-up, .reveal-scale');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>

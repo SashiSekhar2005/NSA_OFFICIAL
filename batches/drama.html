@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drama Dynamics – Sunday Theatre Excellence Batch | Nitya Sundaram Academy</title>
+    <meta name="description" content="Drama Dynamics at Nitya Sundaram Academy. A comprehensive theatre and performing arts program. Acting, directing, scriptwriting, and stage design.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+
+        @keyframes spotlight {
+            0% { transform: translateX(-50%) rotate(-15deg); opacity: 0.5; }
+            50% { transform: translateX(20%) rotate(15deg); opacity: 0.8; }
+            100% { transform: translateX(-50%) rotate(-15deg); opacity: 0.5; }
+        }
+        .animate-spotlight {
+            position: absolute;
+            top: -20%;
+            left: 30%;
+            width: 40vw;
+            height: 150vh;
+            background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+            transform-origin: top center;
+            animation: spotlight 10s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-gradient-bg {
+            background-size: 200% 200%;
+            animation: gradientShift 6s ease infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 3.5s ease-in-out infinite; }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .drama-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .drama-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
+        }
+
+        .gradient-text-gold {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-text-red {
+            background: linear-gradient(135deg, #ef4444, #991b1b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .curtain-overlay {
+            background: linear-gradient(90deg, rgba(100,0,0,0.8) 0%, rgba(200,0,0,0) 20%, rgba(200,0,0,0) 80%, rgba(100,0,0,0.8) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-[#fafafa] text-slate-800">
+
+<!-- Top Contact Bar -->
+    <div class="bg-slate-200 text-black font-bold py-0.5 md:py-2 px-4">
+        <div
+            class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-6">
+            <!-- Contact Info -->
+            <div class="flex  items-center justify-center gap-3 md:gap-6">
+                <a href="tel:+919876543210" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">+91 98765 43210</span>
+                </a>
+                <a href="mailto:info@nityasundaramacademy.com"
+                    class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">info@nityasundaram.com</span>
+                </a>
+            </div>
+
+            <!-- Quick Links & Social Icons -->
+            <div class="flex items-center  gap-4 md:gap-6">
+                <!-- Quick Links -->
+
+                <div class="hidden md:flex items-center gap-4 text-xs md:text-sm">
+                    <a href="#" class="hover:text-[#f9bc60] transition">Admissions</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Gallery</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Careers</a>
+                </div>
+
+                <!-- Social Icons -->
+
+                <div class="flex items-center gap-3">
+                    <h1 class="text-sm md:text-sm">Follow on :</h1>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50  w-full border-slate-200 bg-white backdrop-blur">
+
+
+
+
+        <div class="flex flex-col md:flex-row  md:items-center justify-between  md:py-2">
+            <a href="#" class="flex items-center md:items-start md:h-20  z-10 md:gap-3 px-1 md:px-2">
+                <img src="../images/Remove background project.png" alt="Logo"
+                    class=" size-16 md:size-22 rounded-full object-cover mx-1 ring-emerald-200" />
+                <div class="my-1 md:my-0 text-center md:text-start w-full">
+                    <h1 class="text-3xl  font-extrabold tracking-wide text-emerald-700 md:text-5xl font-poppins"
+                        id="nameBox">
+                        NITYA SUNDARAM
+                    </h1>
+
+                    <p class="text-sm font-bold text-black md:text-sm md:mt-2">
+                        UTTARESWAR , SORO , BALASORE
+                    </p>
+                </div>
+            </a>
+
+            <nav class=" bg-emerald-50 md:bg-white   w-full  md:w-3xl  ">
+                <ul
+                    class="flex items-center justify-around text-xs font-bold py-2  text-emerald-700 md:gap-3 md:text-lg xl:text-xl font-poppins ">
+                    <li class=" ">
+                        <a href="../index.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="../courses.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="../events.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../gallery.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="../productions.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500  bg-clip-text text-transparent animate-gradient  ">PRODUCTIONS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══ DRAMATIC HERO BANNER ═══ -->
+    <section class="relative w-full h-[65vh] md:h-[80vh] flex items-center justify-center overflow-hidden bg-slate-900">
+        <!-- Stage Background Image -->
+        <img src="https://images.unsplash.com/photo-1507676184212-d0c30a514101?w=1600&q=80" alt="Theatre Stage" class="absolute inset-0 w-full h-full object-cover object-bottom" style="filter: brightness(0.3) contrast(1.2);">
+        
+        <!-- Spotlight Animation Overlay -->
+        <div class="animate-spotlight"></div>
+        <div class="animate-spotlight" style="left: 70%; animation-delay: -5s; animation-direction: reverse;"></div>
+        
+        <!-- Red Curtain Edge Overlay -->
+        <div class="absolute inset-0 curtain-overlay pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-slate-900/90 pointer-events-none"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
+            <div class="flex items-center justify-center gap-2 text-sm text-amber-200/70 mb-4 tracking-widest uppercase text-[10px] md:text-xs font-bold">
+                <a href="../index.html" class="hover:text-[#f9bc60] transition">Home</a>
+                <span>/</span>
+                <a href="../courses.html" class="hover:text-[#f9bc60] transition">Courses</a>
+                <span>/</span>
+                <span class="text-[#f9bc60]">Drama Dynamics</span>
+            </div>
+            
+            <div class="inline-flex items-center justify-center mb-6">
+                <span class="border border-red-500/50 bg-red-900/30 text-amber-400 text-xs font-bold tracking-[0.3em] uppercase px-6 py-2 rounded-full backdrop-blur-md shadow-[0_0_20px_rgba(220,38,38,0.3)]">
+                    Sunday Theatre Excellence Batch
+                </span>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-extrabold text-white drop-shadow-2xl font-poppins leading-none mb-4 tracking-tight">
+                <span class="gradient-text-gold">DRAMA</span><br>
+                <span class="text-white">DYNAMICS</span>
+            </h1>
+            
+            <div class="text-amber-400 text-lg md:text-2xl font-bold italic font-serif mb-8 drop-shadow-lg flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+                <span>Perform with Confidence.</span>
+                <span class="hidden md:inline">•</span>
+                <span class="text-red-400">Create with Imagination.</span>
+                <span class="hidden md:inline">•</span>
+                <span>Lead with Expression.</span>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mt-8">
+                <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20am%20interested%20in%20enrolling%20in%20the%20Drama%20Dynamics%20batch.%20Please%20share%20the%20details." target="_blank"
+                   class="group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-700 to-red-900 text-white font-extrabold px-10 py-4 rounded-full shadow-[0_0_30px_rgba(220,38,38,0.5)] hover:shadow-[0_0_50px_rgba(220,38,38,0.8)] transition-all duration-300 hover:-translate-y-1 text-sm md:text-lg overflow-hidden">
+                    <span class="absolute inset-0 bg-gradient-to-r from-red-600 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span class="relative z-10 flex items-center gap-2">🎭 Join the Cast</span>
+                </a>
+                <a href="#about-program" class="inline-flex items-center gap-2 border border-white/30 bg-black/40 backdrop-blur-sm hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 text-sm md:text-lg">
+                    Discover the Program
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT THE PROGRAM ═══ -->
+    <section id="about-program" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white relative">
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(#dc2626 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Text Content -->
+                <div class="reveal-up">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-3xl">🎭</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 font-poppins tracking-tight">
+                            About <span class="gradient-text-red">The Program</span>
+                        </h2>
+                    </div>
+                    <div class="w-16 h-1.5 bg-red-600 rounded-full mb-8"></div>
+                    
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
+                        <strong class="text-slate-900">Drama Dynamics</strong> is a comprehensive theatre and performing arts program designed to develop creativity, confidence, communication, leadership, and artistic excellence. 
+                    </p>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
+                        This program covers everything from acting and scriptwriting to stage direction, set design, costume creation, voice training, and live performance. Students learn not only how to perform on stage but also how to think creatively, collaborate, solve problems, and express themselves with confidence.
+                    </p>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-2xl mt-8">
+                        <p class="text-red-900 text-base md:text-lg font-bold italic leading-snug">
+                            "More than a drama class, it is a platform where young minds discover their talents, overcome stage fear, and transform into confident communicators and creative performers."
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Image Collage Layout -->
+                <div class="reveal-up grid grid-cols-2 gap-4">
+                    <div class="col-span-2 rounded-2xl overflow-hidden shadow-2xl relative group">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80" alt="Theatre Performance" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl relative group">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&q=80" alt="Script Writing" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl relative group">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?w=400&q=80" alt="Backstage Setup" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROGRAM OBJECTIVES ═══ -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <span class="bg-red-900/50 text-red-300 text-xs font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full border border-red-500/30 mb-4 inline-block">The Foundation</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4 font-poppins">Program Objectives</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-red-500 to-amber-500 rounded-full mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 reveal-up">
+                <!-- Obj 1 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-red-500/50">
+                    <div class="w-14 h-14 bg-indigo-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-indigo-400">🗣️</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Develop confidence and public speaking skills.</p>
+                </div>
+                <!-- Obj 2 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-amber-500/50">
+                    <div class="w-14 h-14 bg-amber-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-amber-400">👥</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Improve communication and creative expression.</p>
+                </div>
+                <!-- Obj 3 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-emerald-500/50">
+                    <div class="w-14 h-14 bg-emerald-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-emerald-400">🧗‍♂️</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Build leadership, teamwork, and discipline.</p>
+                </div>
+                <!-- Obj 4 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-pink-500/50">
+                    <div class="w-14 h-14 bg-pink-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-pink-400">🎬</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Introduce students to the complete theatre production process.</p>
+                </div>
+                <!-- Obj 5 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-cyan-500/50">
+                    <div class="w-14 h-14 bg-cyan-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-cyan-400">💡</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Enhance imagination, storytelling, and problem-solving abilities.</p>
+                </div>
+                <!-- Obj 6 -->
+                <div class="drama-card bg-slate-800 rounded-2xl p-6 text-center border border-slate-700/50 hover:border-red-500/50">
+                    <div class="w-14 h-14 bg-red-900/50 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 text-red-400">🏆</div>
+                    <p class="text-slate-300 font-bold text-xs md:text-sm leading-relaxed">Prepare students for stage performances, competitions, and cultural events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ COURSE INCLUDES (4 PILLARS) ═══ -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-red-600 font-bold tracking-[0.2em] uppercase text-sm mb-2 block">Curriculum</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 font-poppins">Course Includes</h2>
+                <div class="w-20 h-1.5 bg-red-600 rounded-full mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 reveal-up">
+                
+                <!-- Column 1: Acting & Performance -->
+                <div class="drama-card bg-white rounded-3xl overflow-hidden shadow-xl border border-purple-100 flex flex-col h-full">
+                    <div class="bg-gradient-to-r from-purple-700 to-purple-900 p-6 text-white flex items-center gap-3">
+                        <span class="text-3xl">🎭</span>
+                        <h3 class="font-extrabold text-lg leading-tight font-poppins">ACTING &<br>PERFORMANCE</h3>
+                    </div>
+                    <div class="p-6 bg-purple-50 flex-grow">
+                        <ul class="space-y-3 text-sm md:text-base text-slate-700 font-medium">
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Acting Fundamentals</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Character Development</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Facial Expressions & Body Language</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Voice & Speech Training</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Dialogue Delivery</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Improvisation Techniques</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Emotional Expression</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>Stage Performance Practice</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Theatre Production -->
+                <div class="drama-card bg-white rounded-3xl overflow-hidden shadow-xl border border-orange-100 flex flex-col h-full">
+                    <div class="bg-gradient-to-r from-orange-600 to-red-600 p-6 text-white flex items-center gap-3">
+                        <span class="text-3xl">🎬</span>
+                        <h3 class="font-extrabold text-lg leading-tight font-poppins">THEATRE<br>PRODUCTION</h3>
+                    </div>
+                    <div class="p-6 bg-orange-50 flex-grow">
+                        <ul class="space-y-3 text-sm md:text-base text-slate-700 font-medium">
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Stage Direction</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Assistant Direction</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Production Planning</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Rehearsal Management</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Theatre Management</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-orange-500 rounded-full flex-shrink-0"></div>Event Coordination</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: Script Writing & Storytelling -->
+                <div class="drama-card bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-100 flex flex-col h-full">
+                    <div class="bg-gradient-to-r from-emerald-600 to-green-700 p-6 text-white flex items-center gap-3">
+                        <span class="text-3xl">✍️</span>
+                        <h3 class="font-extrabold text-lg leading-tight font-poppins">SCRIPT WRITING &<br>STORYTELLING</h3>
+                    </div>
+                    <div class="p-6 bg-emerald-50 flex-grow">
+                        <ul class="space-y-3 text-sm md:text-base text-slate-700 font-medium">
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Creative Writing</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Story Development</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Script Writing</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Dialogue Writing</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Screenplay Basics</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Storyboarding</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-emerald-500 rounded-full flex-shrink-0"></div>Adaptation of Stories for Stage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Stage & Set Design -->
+                <div class="drama-card bg-white rounded-3xl overflow-hidden shadow-xl border border-blue-100 flex flex-col h-full">
+                    <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white flex items-center gap-3">
+                        <span class="text-3xl">🏗️</span>
+                        <h3 class="font-extrabold text-lg leading-tight font-poppins">STAGE &<br>SET DESIGN</h3>
+                    </div>
+                    <div class="p-6 bg-blue-50 flex-grow">
+                        <ul class="space-y-3 text-sm md:text-base text-slate-700 font-medium">
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Set Design & Construction</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Stage Decoration</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Prop Design & Management</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Costume Design</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Makeup for Theatre</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Lighting Design</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Sound Design</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 mt-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>Backstage Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BENEFITS OF THE PROGRAM ═══ -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white border-t border-slate-100 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal-up">
+                <span class="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-sm tracking-wider uppercase mb-6 shadow-xl">
+                    ⭐ Benefits of the Program ⭐
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 reveal-up">
+                
+                <!-- Performance Benefits -->
+                <div class="group border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-purple-800 text-white p-6 text-center">
+                        <h3 class="font-extrabold text-xl font-poppins">PERFORMANCE<br>BENEFITS</h3>
+                        <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mt-4 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">🎭</div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <ul class="space-y-4 text-sm text-slate-700 font-semibold">
+                            <li class="flex items-start gap-3"><span class="text-purple-600 font-bold mt-0.5">✔</span>Develops Strong Stage Presence</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 font-bold mt-0.5">✔</span>Improves Acting Skills</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 font-bold mt-0.5">✔</span>Builds Voice Control & Expression</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 font-bold mt-0.5">✔</span>Enhances Creativity & Imagination</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 font-bold mt-0.5">✔</span>Strengthens Storytelling Ability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Personal Development -->
+                <div class="group border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-blue-600 text-white p-6 text-center">
+                        <h3 class="font-extrabold text-xl font-poppins">PERSONAL<br>DEVELOPMENT</h3>
+                        <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mt-4 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">🧍</div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <ul class="space-y-4 text-sm text-slate-700 font-semibold">
+                            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">✔</span>Boosts Self-Confidence</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">✔</span>Eliminates Stage Fear</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">✔</span>Improves Public Speaking</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">✔</span>Develops Leadership Qualities</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 font-bold mt-0.5">✔</span>Enhances Emotional Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Creative Benefits -->
+                <div class="group border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-orange-600 text-white p-6 text-center">
+                        <h3 class="font-extrabold text-xl font-poppins">CREATIVE<br>BENEFITS</h3>
+                        <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mt-4 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">🎨</div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <ul class="space-y-4 text-sm text-slate-700 font-semibold">
+                            <li class="flex items-start gap-3"><span class="text-orange-600 font-bold mt-0.5">✔</span>Learns Script & Story Writing</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-600 font-bold mt-0.5">✔</span>Understands Theatre Direction</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-600 font-bold mt-0.5">✔</span>Gains Knowledge of Set & Costume Design</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-600 font-bold mt-0.5">✔</span>Develops Artistic Vision</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-600 font-bold mt-0.5">✔</span>Encourages Innovation & Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Career Foundation -->
+                <div class="group border border-slate-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-green-700 text-white p-6 text-center">
+                        <h3 class="font-extrabold text-xl font-poppins">CAREER<br>FOUNDATION</h3>
+                        <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mt-4 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">💼</div>
+                    </div>
+                    <div class="p-6 bg-white">
+                        <ul class="space-y-4 text-sm text-slate-700 font-semibold">
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Theatre Artist</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Stage Director</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Script Writer & Creative Writer</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Actor & Performer</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Event Manager</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 font-bold mt-0.5">✔</span>Media & Entertainment Opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ LEARNING OUTCOMES ═══ -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50 relative overflow-hidden">
+        <!-- Decorative Stars -->
+        <div class="absolute top-10 left-10 text-4xl text-amber-200 animate-pulse">⭐</div>
+        <div class="absolute bottom-10 right-10 text-4xl text-amber-200 animate-pulse">⭐</div>
+
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12 reveal-up">
+                <div class="inline-flex items-center gap-4 bg-gradient-to-r from-red-700 to-red-900 text-white px-8 py-3 rounded-full font-extrabold text-xl md:text-3xl font-poppins shadow-lg mb-8">
+                    <span>⭐</span> LEARNING OUTCOMES <span>⭐</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 reveal-up">
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Perform confidently on stage.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Communicate effectively with confidence and clarity.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Write original scripts and engaging dialogues.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Work collaboratively as part of a production team.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Direct and organize theatrical performances.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Manage stage productions from planning to final performance.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Design creative stage sets, props, and costumes.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-red-50 hover:border-red-200 hover:shadow-md transition">
+                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 text-red-600 font-black">✔</div>
+                    <p class="text-slate-800 font-medium text-base">Develop leadership, discipline, and professional work ethics.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center reveal-up">
+                <img src="https://images.unsplash.com/photo-1521337424684-d65fa3a4d876?w=1000&q=80" alt="Audience silhouette" class="w-full h-48 md:h-64 object-cover rounded-3xl shadow-2xl filter contrast-125 brightness-75">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WHO CAN JOIN + BATCH INFO ═══ -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 reveal-up">
+
+                <!-- Who Can Join -->
+                <div class="border-2 border-blue-100 rounded-3xl p-8 md:p-10 shadow-xl bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-3xl -mr-10 -mt-10 opacity-60"></div>
+                    
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg">👥</div>
+                        <h3 class="text-2xl font-extrabold text-slate-900 font-poppins">WHO CAN JOIN?</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3"><span class="text-xl">🎓</span><p class="text-slate-700 font-bold text-lg">School Students</p></li>
+                        <li class="flex items-center gap-3"><span class="text-xl">👦</span><p class="text-slate-700 font-bold text-lg">Teenagers</p></li>
+                        <li class="flex items-center gap-3"><span class="text-xl">🎒</span><p class="text-slate-700 font-bold text-lg">College Students</p></li>
+                        <li class="flex items-center gap-3"><span class="text-xl">🌱</span><p class="text-slate-700 font-bold text-lg">Beginners</p></li>
+                        <li class="flex items-center gap-3"><span class="text-xl">🎭</span><p class="text-slate-700 font-bold text-lg">Young Theatre Enthusiasts</p></li>
+                        <li class="flex items-center gap-3"><span class="text-xl">✨</span><p class="text-slate-700 font-bold text-lg">Students Interested in Acting & Creative Arts</p></li>
+                    </ul>
+                </div>
+
+                <!-- Batch Information -->
+                <div class="border-2 border-orange-200 rounded-3xl p-8 md:p-10 shadow-xl bg-gradient-to-br from-white to-orange-50 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-200 rounded-full blur-3xl -mr-10 -mt-10 opacity-60"></div>
+                    
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 bg-orange-600 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg">📅</div>
+                        <h3 class="text-2xl font-extrabold text-slate-900 font-poppins">BATCH INFORMATION</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-orange-600 text-xs uppercase tracking-widest font-bold mb-1">Batch Name:</p>
+                            <p class="font-extrabold text-xl text-slate-800">Drama Dynamics</p>
+                        </div>
+                        <div class="border-t border-orange-200/60 pt-4">
+                            <p class="text-orange-600 text-xs uppercase tracking-widest font-bold mb-1">Schedule:</p>
+                            <p class="font-bold text-lg text-slate-800">Every Sunday</p>
+                        </div>
+                        <div class="border-t border-orange-200/60 pt-4">
+                            <p class="text-orange-600 text-xs uppercase tracking-widest font-bold mb-1">Duration:</p>
+                            <p class="font-bold text-lg text-slate-800">2 Hours</p>
+                        </div>
+                        <div class="border-t border-orange-200/60 pt-4">
+                            <p class="text-orange-600 text-xs uppercase tracking-widest font-bold mb-1">Mode:</p>
+                            <p class="font-bold text-lg text-slate-800">Practical + Interactive + Performance-Based Learning</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ACADEMY MOTTO / CTA STRIP ═══ -->
+    <section class="py-12 md:py-16 px-4 bg-slate-900 border-t-4 border-amber-500 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80')] opacity-10 bg-cover bg-center"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-amber-500 text-slate-900 font-black px-6 py-1.5 rounded-full text-xs md:text-sm tracking-[0.2em] uppercase mb-6 shadow-[0_0_15px_rgba(245,158,11,0.5)]">
+                Academy Motto
+            </div>
+            
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white font-poppins tracking-wider mb-6">
+                <span class="text-amber-400">CONFIDENCE</span> • 
+                <span class="text-red-500">CREATIVITY</span> • 
+                <span class="text-blue-400">COMMUNICATION</span> • 
+                <span class="text-emerald-400">CHARACTER</span>
+            </h2>
+            
+            <p class="text-slate-300 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed mb-10">
+                Join the Drama Dynamics Sunday Theatre Excellence Batch and discover the exciting world of acting, storytelling, directing, scriptwriting, stage design, and live performance. Transform your imagination into unforgettable performances while building confidence, leadership, and lifelong skills.
+            </p>
+            
+            <div class="flex justify-center">
+                <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20want%20to%20enroll%20in%20the%20Drama%20Dynamics%20batch.%20Please%20share%20the%20details." target="_blank"
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-800 text-white font-extrabold px-10 py-5 rounded-full shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_50px_rgba(220,38,38,0.7)] transition-all duration-300 hover:-translate-y-1 text-base md:text-xl">
+                    Enroll Now via WhatsApp
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-white text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">About Us</h3>
+                    <p class="text-black text-sm leading-relaxed mb-4">
+                        Nitya Sundaram Academy is dedicated to providing holistic education and personality development
+                        for students.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-black hover:text-[#f9bc60] transition text-sm">Home</a>
+                        </li>
+                        <li><a href="../about.html" class="text-black hover:text-[#f9bc60] transition text-sm">About Us</a>
+                        </li>
+                        <li><a href="../programs.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Programs</a></li>
+                        <li><a href="../courses.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Courses</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Events</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Personality
+                                Development</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Career Guidance</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Skill Training</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Academic Support</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Mentorship
+                                Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Contact Us</h3>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 flex-shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Uttareswar, Soro, Balasore, Odisha <br>(Upper Floor of Axis Bank, NH-16)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div>
+                                <a href="tel:+918637200635" class="hover:text-[#f9bc60] transition block">+91
+                                    8637200635</a>
+                                <a href="tel:+917735481329" class="hover:text-[#f9bc60] transition block">+91
+                                    7735481329</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:info@nityasundaramacademy.com"
+                                class="hover:text-[#f9bc60] transition break-all">info@nityasundaramacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-600 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-black">
+                        &copy; 2026 Nitya Sundaram Academy. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Privacy Policy</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Terms of Service</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        // Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal-up');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+
+</body>
+</html>

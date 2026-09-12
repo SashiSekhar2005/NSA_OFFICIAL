@@ -1,0 +1,13 @@
+ /* Keyframes to animate gradient */
+    @keyframes text-gradient {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+    .animate-gradient {
+      background-size: 200% auto;
+      animation: text-gradient 3.5s linear infinite;
+    }
+    .animate-grad{
+        background-size: 200% auto;
+      animation: text-gradient 2s linear infinite;
+    }

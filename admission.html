@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions | Nitya Sundaram Academy – Start Your Journey</title>
+    <meta name="description" content="Apply for admission to Nitya Sundaram Academy, Soro, Balasore. Join courses in dance, music, yoga, personality development, spoken English, arts and more." />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+
+        /* Ken-Burns */
+        @keyframes kenburns {
+            0%   { transform: scale(1) translate(0,0); }
+            50%  { transform: scale(1.07) translate(-1%,-1%); }
+            100% { transform: scale(1) translate(0,0); }
+        }
+        .hero-img { animation: kenburns 14s ease-in-out infinite; }
+
+        /* Gold shimmer */
+        @keyframes shimmer {
+            0%   { background-position: -200% center; }
+            100% { background-position:  200% center; }
+        }
+        .gold-shimmer {
+            background: linear-gradient(90deg,#f9bc60 0%,#ffd700 40%,#f9bc60 60%,#e09a30 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+
+        /* Float badge */
+        @keyframes floatBadge { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+        .float-badge { animation: floatBadge 3.5s ease-in-out infinite; }
+
+        /* Dots bg */
+        .dots-bg {
+            background-image: radial-gradient(#d4a843 1px, transparent 1px);
+            background-size: 18px 18px;
+        }
+
+        /* Ticker */
+        @keyframes tickerScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+        .ticker-track { animation: tickerScroll 30s linear infinite; }
+        .ticker-track:hover { animation-play-state: paused; }
+
+        /* Card hover */
+        .prog-card { transition: transform .3s, box-shadow .3s; }
+        .prog-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(0,0,0,.14); }
+
+        /* Benefit card */
+        .ben-card { transition: transform .3s, box-shadow .3s; }
+        .ben-card:hover { transform: translateY(-4px); box-shadow: 0 0 0 3px #f9bc6066; }
+
+        /* Step pulse */
+        @keyframes pulseRing { 0%{transform:scale(1);opacity:.8} 100%{transform:scale(2.2);opacity:0} }
+        .pulse-ring::before {
+            content:''; position:absolute; inset:0; border-radius:9999px;
+            border:2px solid #f9bc60; animation:pulseRing 2s ease-out infinite;
+        }
+
+        /* Animate gradient text */
+        @keyframes animate-gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        .animate-gradient { background-size:200% 200%; animation:animate-gradient 3s ease infinite; }
+
+        /* Counter up */
+        @keyframes countUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+        .count-anim { animation: countUp .6s ease forwards; }
+
+        /* Form input focus */
+        .form-input:focus { border-color: #f9bc60; outline: none; box-shadow: 0 0 0 3px rgba(249,188,96,.15); }
+
+        /* Batch button */
+        .batch-btn { transition: all .2s; }
+        .batch-btn.selected { background: #0f1f3d; color: #f9bc60; border-color: #0f1f3d; }
+        .batch-btn:not(.selected):hover { background: #f9bc6022; border-color: #f9bc60; }
+
+        /* Success modal */
+        #success-modal { display:none; }
+        #success-modal.open { display:flex; }
+
+        /* FAQ */
+        .faq-answer { max-height:0; overflow:hidden; transition: max-height .4s ease, padding .4s ease; }
+        .faq-answer.open { max-height:300px; }
+        .faq-icon { transition: transform .3s; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+        /* Progress bar */
+        @keyframes progressFill { from{width:0} to{width:var(--w)} }
+        .progress-bar { animation: progressFill 1.5s ease forwards; }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ── TOP CONTACT BAR ── -->
+    <div class="bg-slate-200 text-black font-bold py-0.5 md:py-2 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-6">
+            <div class="flex items-center justify-center gap-3 md:gap-6">
+                <a href="tel:+918637200635" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <span class="text-[9px] md:text-sm">+91 8637200635</span>
+                </a>
+                <a href="mailto:info@nityasundaramacademy.com" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <span class="text-[9px] md:text-sm">info@nityasundaramacademy.com</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <div class="hidden md:flex items-center gap-4 text-xs md:text-sm">
+                    <a href="index.html" class="hover:text-[#f9bc60] transition">Home</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="courses.html" class="hover:text-[#f9bc60] transition">Courses</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="carrier.html" class="hover:text-[#f9bc60] transition">Careers</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="admission.html" class="text-[#f9bc60]">Admissions</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm">Follow on :</span>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── HEADER / NAV ── -->
+    <header class="sticky top-0 z-50 w-full bg-white shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center justify-between md:py-2">
+            <a href="index.html" class="flex items-center md:items-start md:h-20 z-10 md:gap-3 px-1 md:px-2">
+                <img src="images/Remove background project.png" alt="Nitya Sundaram Academy Logo" class="size-16 md:size-22 rounded-full object-cover mx-1" />
+                <div class="my-1 md:my-0 text-center md:text-start w-full">
+                    <h1 class="text-3xl font-extrabold tracking-wide text-emerald-700 md:text-5xl font-poppins">NITYA SUNDARAM</h1>
+                    <p class="text-sm font-bold text-black md:mt-2">UTTARESWAR , SORO , BALASORE</p>
+                </div>
+            </a>
+            <nav class="bg-emerald-50 md:bg-white w-full md:w-3xl">
+                <ul class="flex items-center justify-around text-xs font-bold py-2 text-emerald-700 md:gap-3 md:text-lg xl:text-xl font-poppins">
+                    <li><a href="index.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">HOME</a></li>
+                    <li><a href="about.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">ABOUT</a></li>
+                    <li><a href="courses.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">COURSES</a></li>
+                    <li><a href="events.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">EVENTS</a></li>
+                    <li><a href="gallery.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">GALLERY</a></li>
+                    <li><a href="productions.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500 bg-clip-text text-transparent animate-gradient">PRODUCTIONS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 1 · HERO BANNER
+    ══════════════════════════════════════════ -->
+    <section id="admissions-hero" class="relative bg-[#0f1f3d] overflow-hidden min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80"
+                 alt="Students at Nitya Sundaram Academy campus"
+                 class="hero-img w-full h-full object-cover opacity-25" />
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0f1f3d]/95 via-[#0f1f3d]/80 to-[#0f1f3d]/40"></div>
+        </div>
+        <div class="absolute top-10 left-8 dots-bg w-32 h-32 opacity-30 rounded-xl hidden md:block"></div>
+        <div class="absolute bottom-20 right-10 dots-bg w-24 h-24 opacity-20 rounded-xl hidden md:block"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-16 md:py-28 w-full">
+            <div class="max-w-2xl">
+                <span class="float-badge inline-block bg-emerald-500 text-white text-xs font-black tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+                    &#10022; ADMISSIONS OPEN 2026
+                </span>
+                <h1 class="font-poppins font-black text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+                    START YOUR<br/>JOURNEY WITH<br/>
+                    <span class="gold-shimmer">NITYA SUNDARAM.</span>
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-10 max-w-lg">
+                    Join our community of forward-thinkers and creators. Experience an educational environment that blends rigorous academic foundation with dynamic practical application.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-10">
+                    <a href="#apply-form" id="apply-now-btn"
+                       class="inline-flex items-center gap-2 bg-[#f9bc60] hover:bg-[#e0a844] text-[#0f1f3d] font-bold px-7 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+                        APPLY NOW
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                    </a>
+                    <a href="#programs"
+                       class="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#0f1f3d] font-bold px-7 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                        EXPLORE PROGRAMS
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                    </a>
+                </div>
+                <!-- Feature badges -->
+                <div class="flex flex-wrap gap-3">
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        &#127979; Expert Faculty
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        &#127963; Modern Campus
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        &#127942; Certified Programs
+                    </span>
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        &#128205; Soro, Balasore
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course ticker -->
+        <div class="absolute bottom-0 left-0 right-0 bg-[#0f1f3d]/80 border-t border-white/10 py-3 overflow-hidden">
+            <div class="flex whitespace-nowrap ticker-track">
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127955; DANCE</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127932; MUSIC &amp; SINGING</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#129470; YOGA</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127775; PERSONALITY DEVELOPMENT</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128218; SPOKEN ENGLISH</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127912; ART &amp; CRAFT</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128187; TECHNOLOGY</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <!-- duplicate for loop -->
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127955; DANCE</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127932; MUSIC &amp; SINGING</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#129470; YOGA</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127775; PERSONALITY DEVELOPMENT</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128218; SPOKEN ENGLISH</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127912; ART &amp; CRAFT</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128187; TECHNOLOGY</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 2 · STATS COUNTER
+    ══════════════════════════════════════════ -->
+    <section id="stats" class="py-12 bg-[#f9bc60]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="font-poppins font-black text-4xl md:text-5xl text-[#0f1f3d]">500+</p>
+                    <p class="text-[#0f1f3d]/70 font-bold text-sm mt-1">Students Enrolled</p>
+                </div>
+                <div>
+                    <p class="font-poppins font-black text-4xl md:text-5xl text-[#0f1f3d]">10+</p>
+                    <p class="text-[#0f1f3d]/70 font-bold text-sm mt-1">Expert Faculty</p>
+                </div>
+                <div>
+                    <p class="font-poppins font-black text-4xl md:text-5xl text-[#0f1f3d]">15+</p>
+                    <p class="text-[#0f1f3d]/70 font-bold text-sm mt-1">Programs Available</p>
+                </div>
+                <div>
+                    <p class="font-poppins font-black text-4xl md:text-5xl text-[#0f1f3d]">4+</p>
+                    <p class="text-[#0f1f3d]/70 font-bold text-sm mt-1">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 3 · WHY CHOOSE NSA
+    ══════════════════════════════════════════ -->
+    <section id="why-nsa" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+            <!-- Left: Text -->
+            <div class="w-full lg:w-[50%]">
+                <p class="text-[#f9bc60] font-black text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Why Join Us</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d] leading-tight mb-2">
+                    MORE THAN<br/>AN ACADEMY.
+                </h2>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl leading-tight mb-6 gold-shimmer">A LIFE EXPERIENCE.</h2>
+                <p class="text-slate-600 text-base leading-relaxed mb-6">
+                    At Nitya Sundaram Academy, we don't just teach — we nurture. Our holistic approach combines expert guidance, practical learning, and a vibrant community that inspires every student to achieve their full potential.
+                </p>
+                <p class="text-slate-600 text-base leading-relaxed mb-8">
+                    Whether you're a beginner discovering a new passion or an advanced learner sharpening your craft, our structured batches and dedicated faculty ensure you grow at every stage.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-[#0f1f3d] font-black flex-shrink-0">&#10003;</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Flexible Batch Timings</p>
+                            <p class="text-xs text-slate-500">Morning, afternoon, evening and weekend slots available</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-[#0f1f3d] rounded-xl flex items-center justify-center text-[#f9bc60] font-black flex-shrink-0">&#10003;</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Performance Opportunities</p>
+                            <p class="text-xs text-slate-500">Annual showcases, competitions and community events</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-[#0f1f3d] font-black flex-shrink-0">&#10003;</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Affordable Fee Structure</p>
+                            <p class="text-xs text-slate-500">Quality education accessible to every family in Soro &amp; Balasore</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-[#0f1f3d] rounded-xl flex items-center justify-center text-[#f9bc60] font-black flex-shrink-0">&#10003;</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Certified Recognition</p>
+                            <p class="text-xs text-slate-500">Completion certificates recognized by industry partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Image block -->
+            <div class="w-full lg:w-[50%] relative flex-shrink-0">
+                <div class="absolute -top-6 -right-6 dots-bg w-28 h-28 opacity-40 rounded-xl z-0 hidden md:block"></div>
+                <div class="relative z-10 grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-48 md:h-56">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&q=80" alt="Dance class at NSA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-48 md:h-56 mt-8">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Learning at NSA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-48 md:h-56 -mt-8">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Yoga at NSA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl h-48 md:h-56">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80" alt="Art at NSA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
+                </div>
+                <div class="absolute -bottom-4 -left-4 w-3/4 h-4 bg-[#f9bc60] rounded-full z-0 opacity-80 hidden md:block"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 4 · PROGRAMS AVAILABLE
+    ══════════════════════════════════════════ -->
+    <section id="programs" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs md:text-sm tracking-[0.3em] uppercase mb-3">What We Offer</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">PROGRAMS AVAILABLE</h2>
+                <p class="text-slate-500 mt-3 max-w-xl mx-auto text-sm md:text-base">Choose from a wide range of programs designed for all age groups and skill levels.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+                <!-- Dance -->
+                <div class="prog-card bg-[#0f1f3d] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Dance')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&q=80" alt="Dance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#127955;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">DANCE</h3>
+                        <p class="text-slate-400 text-xs mb-3">Classical, folk and contemporary styles for all ages.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Morning / Evening batches &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Music & Singing -->
+                <div class="prog-card bg-[#1a2f55] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Music & Singing')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80" alt="Music" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#127932;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">MUSIC &amp; SINGING</h3>
+                        <p class="text-slate-400 text-xs mb-3">Vocal training, harmonium, tabla and more.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">All batch timings &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Yoga -->
+                <div class="prog-card bg-[#1a4d2e] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Yoga')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Yoga" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#129470;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">YOGA</h3>
+                        <p class="text-slate-400 text-xs mb-3">Wellness, flexibility and mindfulness for all levels.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Morning batches &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Personality Development -->
+                <div class="prog-card bg-[#7b3f00] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Personality Development')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80" alt="Personality" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#127775;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">PERSONALITY PLUS</h3>
+                        <p class="text-slate-400 text-xs mb-3">Confidence, leadership and communication skills.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Weekend batches &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Spoken English -->
+                <div class="prog-card bg-[#2d1b4e] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Spoken English')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&q=80" alt="English" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#128218;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">SPOKEN ENGLISH</h3>
+                        <p class="text-slate-400 text-xs mb-3">Fluency, pronunciation and business communication.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Afternoon / Evening &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Art & Craft -->
+                <div class="prog-card bg-[#0f1f3d] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Art & Craft')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80" alt="Art" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#127912;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">ART &amp; CRAFT</h3>
+                        <p class="text-slate-400 text-xs mb-3">Painting, drawing and creative art for all ages.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Morning / Afternoon &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Drama & Acting -->
+                <div class="prog-card bg-[#1a2f55] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Drama & Acting')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&q=80" alt="Drama" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#127914;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">DRAMA &amp; ACTING</h3>
+                        <p class="text-slate-400 text-xs mb-3">Stage presence, script reading and performance arts.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">Evening / Weekend &#8594;</span>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="prog-card bg-[#1a4d2e] text-white rounded-2xl overflow-hidden group cursor-pointer" onclick="selectProgram('Technology')">
+                    <div class="h-36 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Tech" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
+                    </div>
+                    <div class="p-5">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-xl flex items-center justify-center text-xl mb-3">&#128187;</div>
+                        <h3 class="font-poppins font-black text-base mb-1">TECHNOLOGY</h3>
+                        <p class="text-slate-400 text-xs mb-3">Computer basics, digital skills and online tools.</p>
+                        <span class="text-[#f9bc60] text-xs font-bold">All batch timings &#8594;</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="courses.html" class="inline-flex items-center gap-2 border-2 border-[#0f1f3d] text-[#0f1f3d] hover:bg-[#0f1f3d] hover:text-white font-bold px-8 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                    VIEW ALL COURSES &#8594;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 5 · APPLICATION FORM + BENEFITS
+    ══════════════════════════════════════════ -->
+    <section id="apply-form" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs md:text-sm tracking-[0.3em] uppercase mb-3">Get Started</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">APPLICATION FORM</h2>
+                <p class="text-slate-500 mt-3 text-sm md:text-base">Please fill in your details below to begin your admission process.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+
+                <!-- FORM -->
+                <div class="flex-1">
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-lg">
+                        <form id="admission-form" onsubmit="submitAdmission(event)" class="space-y-6">
+
+                            <!-- Row 1 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Full Name *</label>
+                                    <input type="text" id="adm-name" required placeholder="Enter your full name"
+                                           class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition" />
+                                </div>
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Date of Birth *</label>
+                                    <input type="date" id="adm-dob" required
+                                           class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm transition" />
+                                </div>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Mobile Number *</label>
+                                    <input type="tel" id="adm-phone" required placeholder="+91 XXXXX XXXXX"
+                                           class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition" />
+                                </div>
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Email Address</label>
+                                    <input type="email" id="adm-email" placeholder="your.email@example.com"
+                                           class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition" />
+                                </div>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Parent / Guardian Name</label>
+                                    <input type="text" id="adm-parent" placeholder="Parent or guardian name"
+                                           class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition" />
+                                </div>
+                                <div>
+                                    <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Program of Interest *</label>
+                                    <select id="adm-program" required
+                                            class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm transition bg-white">
+                                        <option value="">Select a program...</option>
+                                        <option>Dance</option>
+                                        <option>Music &amp; Singing</option>
+                                        <option>Yoga</option>
+                                        <option>Personality Development</option>
+                                        <option>Spoken English</option>
+                                        <option>Art &amp; Craft</option>
+                                        <option>Drama &amp; Acting</option>
+                                        <option>Technology</option>
+                                        <option>6-10th Coaching</option>
+                                        <option>Multiple Programs</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Preferred Batch Timing -->
+                            <div>
+                                <label class="block text-[#0f1f3d] text-xs font-black mb-3 tracking-widest uppercase">Preferred Batch Timing *</label>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="batch-grid">
+                                    <button type="button" class="batch-btn selected border-2 border-[#0f1f3d] bg-[#0f1f3d] text-[#f9bc60] rounded-xl py-3 px-2 text-xs font-black flex flex-col items-center gap-1.5" data-batch="Morning" onclick="selectBatch(this)">
+                                        <span class="text-xl">&#9728;&#65039;</span> Morning
+                                    </button>
+                                    <button type="button" class="batch-btn border-2 border-slate-200 text-slate-600 rounded-xl py-3 px-2 text-xs font-black flex flex-col items-center gap-1.5" data-batch="Afternoon" onclick="selectBatch(this)">
+                                        <span class="text-xl">&#9925;</span> Afternoon
+                                    </button>
+                                    <button type="button" class="batch-btn border-2 border-slate-200 text-slate-600 rounded-xl py-3 px-2 text-xs font-black flex flex-col items-center gap-1.5" data-batch="Evening" onclick="selectBatch(this)">
+                                        <span class="text-xl">&#127769;</span> Evening
+                                    </button>
+                                    <button type="button" class="batch-btn border-2 border-slate-200 text-slate-600 rounded-xl py-3 px-2 text-xs font-black flex flex-col items-center gap-1.5" data-batch="Weekend" onclick="selectBatch(this)">
+                                        <span class="text-xl">&#128197;</span> Weekend
+                                    </button>
+                                </div>
+                                <input type="hidden" id="adm-batch" value="Morning" />
+                            </div>
+
+                            <!-- Address -->
+                            <div>
+                                <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Address / Village</label>
+                                <input type="text" id="adm-address" placeholder="Village, Block, District"
+                                       class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition" />
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label class="block text-[#0f1f3d] text-xs font-black mb-2 tracking-widest uppercase">Any Message (Optional)</label>
+                                <textarea id="adm-message" rows="3" placeholder="Any specific queries or requests..."
+                                          class="form-input w-full border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 text-sm transition resize-none"></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" id="submit-admission-btn"
+                                    class="w-full inline-flex items-center justify-center gap-2 bg-[#0f1f3d] hover:bg-[#1a2f55] text-white font-black px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg text-sm">
+                                SUBMIT APPLICATION
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                            </button>
+
+                            <div id="form-success" class="hidden text-center py-3 bg-emerald-50 border border-emerald-200 rounded-xl">
+                                <p class="text-emerald-700 font-bold text-sm">&#9989; Application sent via WhatsApp! Our team will contact you within 24 hours.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR: Benefits + Contact -->
+                <div class="w-full lg:w-[340px] space-y-6 flex-shrink-0">
+
+                    <!-- Admission Benefits -->
+                    <div class="bg-[#0f1f3d] text-white rounded-3xl p-7">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-8 h-8 bg-[#f9bc60] rounded-lg flex items-center justify-center text-[#0f1f3d] font-black">&#9733;</div>
+                            <h3 class="font-poppins font-black text-lg">Admission Benefits</h3>
+                        </div>
+                        <div class="space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-[#f9bc60]/20 border border-[#f9bc60]/30 rounded-xl flex items-center justify-center text-xl flex-shrink-0">&#127979;</div>
+                                <div>
+                                    <p class="font-bold text-white text-sm">Industry Expert Faculty</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Learn directly from seasoned professionals currently active in their respective fields.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-[#f9bc60]/20 border border-[#f9bc60]/30 rounded-xl flex items-center justify-center text-xl flex-shrink-0">&#127963;</div>
+                                <div>
+                                    <p class="font-bold text-white text-sm">State-of-the-Art Facilities</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Access modern labs, studios, and a comprehensive library designed for creative learning.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-[#f9bc60]/20 border border-[#f9bc60]/30 rounded-xl flex items-center justify-center text-xl flex-shrink-0">&#127942;</div>
+                                <div>
+                                    <p class="font-bold text-white text-sm">Certified Recognition</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Earn credentials recognized by leading industry partners worldwide upon completion.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-[#f9bc60]/20 border border-[#f9bc60]/30 rounded-xl flex items-center justify-center text-xl flex-shrink-0">&#128101;</div>
+                                <div>
+                                    <p class="font-bold text-white text-sm">Community &amp; Network</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Join a vibrant community of students, alumni, and mentors who lift each other up.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-[#f9bc60]/20 border border-[#f9bc60]/30 rounded-xl flex items-center justify-center text-xl flex-shrink-0">&#128200;</div>
+                                <div>
+                                    <p class="font-bold text-white text-sm">Performance Opportunities</p>
+                                    <p class="text-slate-400 text-xs mt-0.5">Regular showcases, events and competitions to exhibit your talents to the world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Need Assistance -->
+                    <div class="bg-[#f9bc60] rounded-3xl p-7">
+                        <h3 class="font-poppins font-black text-[#0f1f3d] text-lg mb-2">Need Assistance?</h3>
+                        <p class="text-[#0f1f3d]/70 text-xs mb-5">Our admissions counselling team is available Monday through Friday, 9 AM - 8 PM.</p>
+                        <div class="space-y-3">
+                            <a href="tel:+918637200635" class="flex items-center gap-3 text-[#0f1f3d] font-bold text-sm hover:underline">
+                                <div class="w-8 h-8 bg-[#0f1f3d]/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                </div>
+                                +91 8637200635
+                            </a>
+                            <a href="tel:+917735481329" class="flex items-center gap-3 text-[#0f1f3d] font-bold text-sm hover:underline">
+                                <div class="w-8 h-8 bg-[#0f1f3d]/10 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                </div>
+                                +91 7735481329
+                            </a>
+                            <a href="mailto:info@nityasundaramacademy.com" class="flex items-center gap-3 text-[#0f1f3d] font-bold text-xs hover:underline break-all">
+                                <div class="w-8 h-8 bg-[#0f1f3d]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                </div>
+                                info@nityasundaramacademy.com
+                            </a>
+                            <a href="https://wa.me/918637200635?text=Hello!%20I%20have%20a%20query%20about%20admissions%20at%20Nitya%20Sundaram%20Academy." target="_blank"
+                               class="mt-4 flex items-center justify-center gap-2 bg-[#0f1f3d] text-white font-bold py-3 rounded-xl text-sm transition hover:bg-[#1a2f55]">
+                                &#128172; Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Important Dates -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-3xl p-7">
+                        <h3 class="font-poppins font-black text-[#0f1f3d] text-lg mb-4">Important Dates</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="font-bold text-[#0f1f3d] text-xs">Admissions Open</p>
+                                    <p class="text-slate-500 text-xs">New batch every month</p>
+                                </div>
+                                <span class="bg-emerald-100 text-emerald-700 text-[10px] font-black px-2 py-1 rounded-full">OPEN</span>
+                            </div>
+                            <div class="border-t border-slate-200 pt-3 flex items-center justify-between">
+                                <div>
+                                    <p class="font-bold text-[#0f1f3d] text-xs">Orientation Day</p>
+                                    <p class="text-slate-500 text-xs">Every 1st of the month</p>
+                                </div>
+                                <span class="bg-blue-100 text-blue-700 text-[10px] font-black px-2 py-1 rounded-full">MONTHLY</span>
+                            </div>
+                            <div class="border-t border-slate-200 pt-3 flex items-center justify-between">
+                                <div>
+                                    <p class="font-bold text-[#0f1f3d] text-xs">Annual Showcase</p>
+                                    <p class="text-slate-500 text-xs">December 2026</p>
+                                </div>
+                                <span class="bg-[#f9bc60]/30 text-[#7b3f00] text-[10px] font-black px-2 py-1 rounded-full">UPCOMING</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 6 · HOW ADMISSIONS WORKS (Steps)
+    ══════════════════════════════════════════ -->
+    <section id="process" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-[#0f1f3d] relative overflow-hidden">
+        <div class="absolute top-8 right-8 dots-bg w-36 h-36 opacity-20 rounded-xl hidden md:block"></div>
+        <div class="absolute bottom-8 left-8 dots-bg w-24 h-24 opacity-10 rounded-xl hidden md:block"></div>
+
+        <div class="max-w-7xl mx-auto relative">
+            <div class="text-center mb-14">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">It's Simple</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-white">HOW ADMISSIONS WORK</h2>
+                <p class="text-slate-400 mt-3 max-w-xl mx-auto text-sm md:text-base">Four simple steps from inquiry to your first day of class.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-0 relative">
+                <div class="hidden md:block absolute top-10 left-[calc(10%+32px)] right-[calc(10%+32px)] h-0.5 bg-gradient-to-r from-[#f9bc60] via-white/20 to-[#f9bc60] opacity-30 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="relative pulse-ring w-20 h-20 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] text-3xl mb-4 shadow-xl">
+                        &#128196;
+                    </div>
+                    <p class="font-poppins font-black text-white text-sm mb-1">APPLY ONLINE</p>
+                    <p class="text-slate-400 text-xs max-w-[120px]">Fill the admission form above or WhatsApp us</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-20 h-20 bg-white/10 border-2 border-[#f9bc60] rounded-full flex items-center justify-center text-3xl mb-4 shadow-xl">
+                        &#128222;
+                    </div>
+                    <p class="font-poppins font-black text-white text-sm mb-1">COUNSELLING CALL</p>
+                    <p class="text-slate-400 text-xs max-w-[120px]">Our team calls you to discuss the right program</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-20 h-20 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] text-3xl mb-4 shadow-xl">
+                        &#128179;
+                    </div>
+                    <p class="font-poppins font-black text-white text-sm mb-1">FEE PAYMENT</p>
+                    <p class="text-slate-400 text-xs max-w-[120px]">Confirm admission with easy fee payment options</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-20 h-20 bg-white/10 border-2 border-[#f9bc60] rounded-full flex items-center justify-center text-3xl mb-4 shadow-xl">
+                        &#127891;
+                    </div>
+                    <p class="font-poppins font-black text-white text-sm mb-1">JOIN YOUR BATCH</p>
+                    <p class="text-slate-400 text-xs max-w-[120px]">Start classes and begin your learning journey!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 7 · TESTIMONIALS
+    ══════════════════════════════════════════ -->
+    <section id="testimonials" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Student Stories</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">WHAT OUR STUDENTS SAY</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-white border border-slate-100 rounded-3xl p-7 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex text-[#f9bc60] mb-4 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">"Joining NSA was the best decision. The dance faculty is exceptional and the performances have built my confidence tremendously. I feel truly seen and supported here."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#0f1f3d] rounded-full flex items-center justify-center text-[#f9bc60] font-poppins font-black">P</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Priya Mohapatra</p>
+                            <p class="text-xs text-slate-500">Dance Student, 2 years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#0f1f3d] rounded-3xl p-7 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex text-[#f9bc60] mb-4 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"The Spoken English program at NSA transformed my communication completely. I got placed in a BPO in Bhubaneswar within 3 months of completing the course!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] font-poppins font-black">R</div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Raju Kumar Sahoo</p>
+                            <p class="text-xs text-slate-400">English Student, Soro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-100 rounded-3xl p-7 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex text-[#f9bc60] mb-4 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">"My daughter loves the yoga and art classes. The teachers are patient, caring and brilliant. The flexible timings make it very convenient for our family schedule."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#0f1f3d] rounded-full flex items-center justify-center text-[#f9bc60] font-poppins font-black">S</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Sunita Pradhan</p>
+                            <p class="text-xs text-slate-500">Parent, Balasore</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 8 · FAQ
+    ══════════════════════════════════════════ -->
+    <section id="faq" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Got Questions?</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">FREQUENTLY ASKED</h2>
+            </div>
+
+            <div class="space-y-3" id="faq-list">
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">What is the minimum age to enroll?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">We welcome students from age 4 and above. Many of our programs like Dance, Music, Art and Yoga are designed for young children. We also have adult batches for all programs. There is truly no age limit to learning!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">How much is the admission fee?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">Fee structures vary by program and are designed to be affordable for all families. Please contact our admissions team at +91 8637200635 or WhatsApp us for a detailed fee structure. We also offer installment payment options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">Can I enroll in more than one program?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">Yes! Many students enroll in multiple programs. For example, a student can attend Dance in the morning and Spoken English in the evening. We will work with you to create a schedule that fits your availability and interests.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">Do you provide certificates upon completion?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">Yes, all students who complete a program receive a Nitya Sundaram Academy certificate of completion. These certificates are recognized by our industry partners and are a great addition to your portfolio or resume.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">Where is the academy located?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">Nitya Sundaram Academy is located at Uttareswar, Soro, Balasore, Odisha — on the Upper Floor of Axis Bank on NH-16. It is conveniently accessible from Soro town and surrounding villages. You can contact us for directions or visit us in person.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-slate-50 transition">
+                        <span class="font-poppins font-bold text-[#0f1f3d] text-sm md:text-base">When do new batches start?</span>
+                        <span class="faq-icon text-2xl text-[#f9bc60] font-black flex-shrink-0 ml-4">+</span>
+                    </button>
+                    <div class="faq-answer px-5 bg-slate-50">
+                        <p class="text-slate-600 text-sm leading-relaxed pb-5">New batches start every month, typically on the 1st or 5th of the month. We hold an orientation session for all new students at the beginning of each batch cycle. Apply early to secure your spot as batches fill up quickly!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEGMENT 9 · FINAL CTA BANNER
+    ══════════════════════════════════════════ -->
+    <section id="final-cta" class="py-16 md:py-20 px-4 md:px-8 lg:px-16 bg-[#f9bc60]">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-[#0f1f3d]/60 font-black text-xs tracking-[0.3em] uppercase mb-3">Ready To Begin?</p>
+            <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d] mb-6">
+                YOUR JOURNEY STARTS<br/>WITH ONE STEP.
+            </h2>
+            <p class="text-[#0f1f3d]/70 text-base mb-10 max-w-xl mx-auto">
+                Don't wait for the perfect moment. Apply today, talk to our counsellors, and find the program that ignites your passion.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#apply-form"
+                   class="inline-flex items-center gap-2 bg-[#0f1f3d] hover:bg-[#1a2f55] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+                    APPLY FOR ADMISSION &#8594;
+                </a>
+                <a href="https://wa.me/918637200635?text=Hello!%20I%20am%20interested%20in%20applying%20to%20Nitya%20Sundaram%20Academy.%20Please%20share%20more%20details." target="_blank"
+                   class="inline-flex items-center gap-2 border-2 border-[#0f1f3d] text-[#0f1f3d] hover:bg-[#0f1f3d] hover:text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-0.5">
+                    &#128172; CHAT WITH US
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="bg-white text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">About Us</h3>
+                    <p class="text-black text-sm leading-relaxed mb-4">Nitya Sundaram Academy is dedicated to providing holistic education and personality development for students.</p>
+                    <div class="flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-black hover:text-[#f9bc60] transition text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-black hover:text-[#f9bc60] transition text-sm">About Us</a></li>
+                        <li><a href="courses.html" class="text-black hover:text-[#f9bc60] transition text-sm">Courses</a></li>
+                        <li><a href="events.html" class="text-black hover:text-[#f9bc60] transition text-sm">Events</a></li>
+                        <li><a href="gallery.html" class="text-black hover:text-[#f9bc60] transition text-sm">Gallery</a></li>
+                        <li><a href="carrier.html" class="text-black hover:text-[#f9bc60] transition text-sm">Careers</a></li>
+                        <li><a href="admission.html" class="text-[#f9bc60] font-bold text-sm">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Dance</a></li>
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Music &amp; Singing</a></li>
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Yoga</a></li>
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Spoken English</a></li>
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Personality Plus</a></li>
+                        <li><a href="#programs" class="text-black hover:text-[#f9bc60] transition text-sm">Art &amp; Craft</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Contact Us</h3>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Uttareswar, Soro, Balasore, Odisha<br/>(Upper Floor of Axis Bank, NH-16)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <div>
+                                <a href="tel:+918637200635" class="hover:text-[#f9bc60] transition block">+91 8637200635</a>
+                                <a href="tel:+917735481329" class="hover:text-[#f9bc60] transition block">+91 7735481329</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:info@nityasundaramacademy.com" class="hover:text-[#f9bc60] transition break-all">info@nityasundaramacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-black">&#169; 2026 Nitya Sundaram Academy. All rights reserved.</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Privacy Policy</a>
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Terms of Service</a>
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* ── Batch timing selector ── */
+        function selectBatch(btn) {
+            document.querySelectorAll('.batch-btn').forEach(b => {
+                b.classList.remove('selected', 'bg-[#0f1f3d]', 'text-[#f9bc60]', 'border-[#0f1f3d]');
+                b.classList.add('border-slate-200', 'text-slate-600');
+            });
+            btn.classList.add('selected');
+            btn.classList.remove('border-slate-200', 'text-slate-600');
+            document.getElementById('adm-batch').value = btn.dataset.batch;
+        }
+
+        /* ── Program auto-fill from card click ── */
+        function selectProgram(prog) {
+            document.getElementById('adm-program').value = prog;
+            document.getElementById('apply-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        /* ── Admission form submit → WhatsApp ── */
+        function submitAdmission(e) {
+            e.preventDefault();
+            const name    = document.getElementById('adm-name').value.trim();
+            const dob     = document.getElementById('adm-dob').value;
+            const phone   = document.getElementById('adm-phone').value.trim();
+            const email   = document.getElementById('adm-email').value.trim();
+            const parent  = document.getElementById('adm-parent').value.trim();
+            const program = document.getElementById('adm-program').value;
+            const batch   = document.getElementById('adm-batch').value;
+            const address = document.getElementById('adm-address').value.trim();
+            const message = document.getElementById('adm-message').value.trim();
+
+            const text =
+                '*Admission Application - Nitya Sundaram Academy*\n\n' +
+                '*Name:* ' + name + '\n' +
+                '*Date of Birth:* ' + (dob || 'Not provided') + '\n' +
+                '*Phone:* ' + phone + '\n' +
+                '*Email:* ' + (email || 'Not provided') + '\n' +
+                '*Parent/Guardian:* ' + (parent || 'Not provided') + '\n' +
+                '*Program:* ' + program + '\n' +
+                '*Batch Timing:* ' + batch + '\n' +
+                '*Address:* ' + (address || 'Not provided') + '\n' +
+                '*Message:* ' + (message || 'None');
+
+            window.open('https://wa.me/918637200635?text=' + encodeURIComponent(text), '_blank');
+            document.getElementById('form-success').classList.remove('hidden');
+            document.getElementById('admission-form').reset();
+            // Reset batch to morning
+            document.querySelectorAll('.batch-btn').forEach(b => {
+                b.classList.remove('selected');
+                b.classList.add('border-slate-200', 'text-slate-600');
+            });
+            const morning = document.querySelector('[data-batch="Morning"]');
+            morning.classList.add('selected');
+            morning.classList.remove('border-slate-200', 'text-slate-600');
+            document.getElementById('adm-batch').value = 'Morning';
+        }
+
+        /* ── FAQ toggle ── */
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = item.classList.contains('open');
+
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('open');
+                i.querySelector('.faq-answer').classList.remove('open');
+            });
+
+            // Open this one if it was closed
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.classList.add('open');
+            }
+        }
+
+        /* ── Smooth scroll ── */
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+</html>

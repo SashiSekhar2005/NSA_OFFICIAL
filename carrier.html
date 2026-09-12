@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | Nitya Sundaram Academy – Build Your Future With Us</title>
+    <meta name="description" content="Join Nitya Sundaram Academy's growing team. Explore teaching, technology, creative, marketing, and operations opportunities in Soro, Balasore, Odisha." />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+
+        /* --- Hero Ken-Burns --- */
+        @keyframes kenburns {
+            0%   { transform: scale(1) translate(0,0); }
+            50%  { transform: scale(1.07) translate(-1%,-1%); }
+            100% { transform: scale(1) translate(0,0); }
+        }
+        .hero-img { animation: kenburns 14s ease-in-out infinite; }
+
+        /* --- Gold shimmer on headings --- */
+        @keyframes shimmer {
+            0%   { background-position: -200% center; }
+            100% { background-position:  200% center; }
+        }
+        .gold-shimmer {
+            background: linear-gradient(90deg, #f9bc60 0%, #ffd700 40%, #f9bc60 60%, #e09a30 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+
+        /* --- Floating badge --- */
+        @keyframes floatBadge {
+            0%,100% { transform: translateY(0); }
+            50%      { transform: translateY(-6px); }
+        }
+        .float-badge { animation: floatBadge 3.5s ease-in-out infinite; }
+
+        /* --- Tab underline --- */
+        .tab-btn { transition: color .25s, border-color .25s; }
+        .tab-btn.active { color: #1e2a4a; border-color: #f9bc60; }
+
+        /* --- Role card hover --- */
+        .role-card { transition: transform .3s, box-shadow .3s; }
+        .role-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.12); }
+
+        /* --- Category card --- */
+        .cat-card { transition: transform .3s, box-shadow .3s; }
+        .cat-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(0,0,0,.18); }
+
+        /* --- Step pulse ring --- */
+        @keyframes pulseRing {
+            0%   { transform: scale(1); opacity: .8; }
+            100% { transform: scale(2.2); opacity: 0; }
+        }
+        .pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            border: 2px solid #f9bc60;
+            animation: pulseRing 2s ease-out infinite;
+        }
+
+        /* --- Ticker --- */
+        @keyframes tickerScroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .ticker-track { animation: tickerScroll 28s linear infinite; }
+        .ticker-track:hover { animation-play-state: paused; }
+
+        /* --- Gradient dots bg --- */
+        .dots-bg {
+            background-image: radial-gradient(#d4a843 1px, transparent 1px);
+            background-size: 18px 18px;
+        }
+
+        /* --- Values card glow --- */
+        .value-card { transition: transform .3s, box-shadow .3s; }
+        .value-card:hover { transform: translateY(-4px); box-shadow: 0 0 0 3px #f9bc6066; }
+
+        /* Modal overlay */
+        #apply-modal { display: none; }
+        #apply-modal.open { display: flex; }
+
+        /* Animate gradient text */
+        @keyframes animate-gradient {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: animate-gradient 3s ease infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- TOP CONTACT BAR -->
+    <div class="bg-slate-200 text-black font-bold py-0.5 md:py-2 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-6">
+            <div class="flex items-center justify-center gap-3 md:gap-6">
+                <a href="tel:+918637200635" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <span class="text-[9px] md:text-sm">+91 8637200635</span>
+                </a>
+                <a href="mailto:info@nityasundaramacademy.com" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <span class="text-[9px] md:text-sm">info@nityasundaramacademy.com</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <div class="hidden md:flex items-center gap-4 text-xs md:text-sm">
+                    <a href="index.html" class="hover:text-[#f9bc60] transition">Home</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="courses.html" class="hover:text-[#f9bc60] transition">Courses</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="carrier.html" class="text-[#f9bc60]">Careers</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm">Follow on :</span>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-50 w-full border-slate-200 bg-white backdrop-blur shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center justify-between md:py-2">
+            <a href="index.html" class="flex items-center md:items-start md:h-20 z-10 md:gap-3 px-1 md:px-2">
+                <img src="images/Remove background project.png" alt="Nitya Sundaram Academy Logo" class="size-16 md:size-22 rounded-full object-cover mx-1 ring-emerald-200" />
+                <div class="my-1 md:my-0 text-center md:text-start w-full">
+                    <h1 class="text-3xl font-extrabold tracking-wide text-emerald-700 md:text-5xl font-poppins">NITYA SUNDARAM</h1>
+                    <p class="text-sm font-bold text-black md:text-sm md:mt-2">UTTARESWAR , SORO , BALASORE</p>
+                </div>
+            </a>
+            <nav class="bg-emerald-50 md:bg-white w-full md:w-3xl">
+                <ul class="flex items-center justify-around text-xs font-bold py-2 text-emerald-700 md:gap-3 md:text-lg xl:text-xl font-poppins">
+                    <li><a href="index.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">HOME</a></li>
+                    <li><a href="about.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">ABOUT</a></li>
+                    <li><a href="courses.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">COURSES</a></li>
+                    <li><a href="events.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">EVENTS</a></li>
+                    <li><a href="gallery.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition">GALLERY</a></li>
+                    <li><a href="productions.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500 bg-clip-text text-transparent animate-gradient">PRODUCTIONS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===========================
+         SEGMENT 1: HERO BANNER
+    =========================== -->
+    <section id="careers-hero" class="relative bg-[#0f1f3d] overflow-hidden min-h-[82vh] flex items-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
+                 alt="Team collaboration at Nitya Sundaram Academy"
+                 class="hero-img w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0f1f3d]/95 via-[#0f1f3d]/75 to-[#0f1f3d]/30"></div>
+        </div>
+        <div class="absolute top-10 left-8 dots-bg w-32 h-32 opacity-30 rounded-xl hidden md:block"></div>
+        <div class="absolute bottom-16 right-10 dots-bg w-24 h-24 opacity-20 rounded-xl hidden md:block"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-16 md:py-28 w-full">
+            <div class="max-w-2xl">
+                <span class="float-badge inline-block bg-[#f9bc60] text-[#0f1f3d] text-xs font-black tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+                    We're Hiring
+                </span>
+                <h1 class="font-poppins font-black text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+                    BUILD YOUR<br/>FUTURE.<br/>
+                    <span class="gold-shimmer">BUILD WITH<br/>NITYA SUNDARAM.</span>
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-10 max-w-lg">
+                    Join a growing ecosystem where education, technology, creativity and people come together to create meaningful opportunities.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#opportunities" id="explore-openings-btn"
+                       class="inline-flex items-center gap-2 bg-[#f9bc60] hover:bg-[#e0a844] text-[#0f1f3d] font-bold px-7 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+                        EXPLORE OPENINGS
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                    </a>
+                    <a href="#apply-cta" id="send-resume-btn"
+                       class="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#0f1f3d] font-bold px-7 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                        SEND YOUR RESUME
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Department ticker -->
+        <div class="absolute bottom-0 left-0 right-0 bg-[#0f1f3d]/80 border-t border-white/10 py-3 overflow-hidden">
+            <div class="flex whitespace-nowrap ticker-track">
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127891; EDUCATION</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128187; TECHNOLOGY</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127912; CREATIVE</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128227; MARKETING</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#9881;&#65039; OPERATIONS</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127891; EDUCATION</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128187; TECHNOLOGY</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#127912; CREATIVE</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#128227; MARKETING</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+                <span class="inline-flex items-center gap-2 mx-8 text-white/70 text-sm font-semibold">&#9881;&#65039; OPERATIONS</span>
+                <span class="text-[#f9bc60] mx-2">&#8226;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 2: YOUR TALENT, YOUR CHAPTER
+    =========================== -->
+    <section id="about-careers" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-[45%] relative flex-shrink-0">
+                <div class="absolute -top-6 -left-6 dots-bg w-28 h-28 opacity-40 rounded-xl z-0"></div>
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80"
+                         alt="Team collaborating at Nitya Sundaram Academy"
+                         class="w-full h-72 md:h-96 object-cover" />
+                </div>
+                <div class="absolute -bottom-4 -right-4 w-3/4 h-4 bg-[#f9bc60] rounded-full z-0 opacity-80"></div>
+            </div>
+
+            <div class="w-full lg:w-[55%]">
+                <p class="text-[#f9bc60] font-black text-xs md:text-sm tracking-[0.3em] uppercase mb-4">A Career, Not Just A Job</p>
+                <h2 class="font-poppins font-black text-4xl md:text-5xl text-[#0f1f3d] leading-tight mb-2">
+                    YOUR TALENT.<br/>YOUR IDEAS.
+                </h2>
+                <h2 class="font-poppins font-black text-4xl md:text-5xl leading-tight mb-6 gold-shimmer">YOUR NEXT CHAPTER.</h2>
+                <p class="text-slate-600 text-base leading-relaxed mb-4">
+                    At Nitya Sundaram, we bring together people who love to teach, create, build, manage and learn.
+                </p>
+                <p class="text-slate-600 text-base leading-relaxed mb-8">
+                    Whether you are an experienced professional, a skilled creator or someone beginning your career, we believe there should be opportunities to discover your potential and make an impact.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#127978;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Growing Institution</p>
+                            <p class="text-xs text-slate-500">Multiple departments</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#128640;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Career Growth</p>
+                            <p class="text-xs text-slate-500">Learn and rise fast</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#129309;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Collaborative Team</p>
+                            <p class="text-xs text-slate-500">Supportive culture</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#127919;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Purposeful Work</p>
+                            <p class="text-xs text-slate-500">Real community impact</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#128161;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Innovation First</p>
+                            <p class="text-xs text-slate-500">Ideas are welcomed</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-2xl">&#128205;</span>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">Soro, Balasore</p>
+                            <p class="text-xs text-slate-500">Odisha, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#opportunities" class="inline-flex items-center gap-2 bg-[#0f1f3d] hover:bg-[#1a2f55] text-white font-bold px-8 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-md">
+                    See All Openings
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 3: WHERE DO YOU BELONG?
+    =========================== -->
+    <section id="departments" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs md:text-sm tracking-[0.3em] uppercase mb-3">Explore Opportunities</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">WHERE DO YOU BELONG?</h2>
+                <p class="text-slate-500 mt-3 max-w-xl mx-auto text-sm md:text-base">Explore opportunities across our growing ecosystem.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+                <!-- Education & Teaching -->
+                <div class="cat-card bg-[#0f1f3d] text-white rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
+                    <div>
+                        <div class="w-12 h-12 bg-[#f9bc60] rounded-xl flex items-center justify-center text-2xl mb-4">&#127891;</div>
+                        <h3 class="font-poppins font-black text-lg mb-1">EDUCATION &amp;<br/>TEACHING</h3>
+                        <p class="text-slate-400 text-xs mb-4">Shape minds. Inspire futures.</p>
+                        <ul class="text-slate-300 text-xs space-y-1">
+                            <li>&#8226; 6-10th Coaching Faculty</li>
+                            <li>&#8226; Dance Tutor</li>
+                            <li>&#8226; Song &amp; Music Tutor</li>
+                            <li>&#8226; Spoken English Trainer</li>
+                            <li>&#8226; Art Tutor</li>
+                        </ul>
+                    </div>
+                    <a href="#opportunities" class="mt-5 inline-flex items-center gap-2 border border-[#f9bc60] text-[#f9bc60] hover:bg-[#f9bc60] hover:text-[#0f1f3d] text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300">
+                        EXPLORE ROLES &#8594;
+                    </a>
+                </div>
+
+                <!-- Corporate & Technology -->
+                <div class="cat-card bg-[#1a2f55] text-white rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
+                    <div>
+                        <div class="w-12 h-12 bg-[#f9bc60] rounded-xl flex items-center justify-center text-2xl mb-4">&#128188;</div>
+                        <h3 class="font-poppins font-black text-lg mb-1">CORPORATE &amp;<br/>TECHNOLOGY</h3>
+                        <p class="text-slate-400 text-xs mb-4">Build systems. Solve problems.</p>
+                        <ul class="text-slate-300 text-xs space-y-1">
+                            <li>&#8226; Full Stack Developer</li>
+                            <li>&#8226; Manager</li>
+                            <li>&#8226; Office Administrator</li>
+                            <li>&#8226; Technology &amp; Digital Roles</li>
+                        </ul>
+                    </div>
+                    <a href="#opportunities" class="mt-5 inline-flex items-center gap-2 border border-[#f9bc60] text-[#f9bc60] hover:bg-[#f9bc60] hover:text-[#0f1f3d] text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300">
+                        EXPLORE ROLES &#8594;
+                    </a>
+                </div>
+
+                <!-- Creative & Media -->
+                <div class="cat-card bg-[#7b3f00] text-white rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
+                    <div>
+                        <div class="w-12 h-12 bg-[#f9bc60] rounded-xl flex items-center justify-center text-2xl mb-4">&#127912;</div>
+                        <h3 class="font-poppins font-black text-lg mb-1">CREATIVE &amp;<br/>MEDIA</h3>
+                        <p class="text-slate-400 text-xs mb-4">Turn ideas into experiences.</p>
+                        <ul class="text-slate-300 text-xs space-y-1">
+                            <li>&#8226; Video Editor</li>
+                            <li>&#8226; Graphics Designer</li>
+                            <li>&#8226; Content Creator</li>
+                            <li>&#8226; Creative Professionals</li>
+                        </ul>
+                    </div>
+                    <a href="#opportunities" class="mt-5 inline-flex items-center gap-2 border border-[#f9bc60] text-[#f9bc60] hover:bg-[#f9bc60] hover:text-[#0f1f3d] text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300">
+                        EXPLORE ROLES &#8594;
+                    </a>
+                </div>
+
+                <!-- Marketing & Content -->
+                <div class="cat-card bg-[#1a4d2e] text-white rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
+                    <div>
+                        <div class="w-12 h-12 bg-[#f9bc60] rounded-xl flex items-center justify-center text-2xl mb-4">&#128227;</div>
+                        <h3 class="font-poppins font-black text-lg mb-1">MARKETING &amp;<br/>CONTENT</h3>
+                        <p class="text-slate-400 text-xs mb-4">Tell stories. Build communities.</p>
+                        <ul class="text-slate-300 text-xs space-y-1">
+                            <li>&#8226; Content Writer</li>
+                            <li>&#8226; Digital Marketing</li>
+                            <li>&#8226; Social Media Manager</li>
+                            <li>&#8226; Marketing Professionals</li>
+                        </ul>
+                    </div>
+                    <a href="#opportunities" class="mt-5 inline-flex items-center gap-2 border border-[#f9bc60] text-[#f9bc60] hover:bg-[#f9bc60] hover:text-[#0f1f3d] text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300">
+                        EXPLORE ROLES &#8594;
+                    </a>
+                </div>
+
+                <!-- Administration & Operations -->
+                <div class="cat-card bg-[#2d1b4e] text-white rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
+                    <div>
+                        <div class="w-12 h-12 bg-[#f9bc60] rounded-xl flex items-center justify-center text-2xl mb-4">&#9881;</div>
+                        <h3 class="font-poppins font-black text-lg mb-1">ADMINISTRATION<br/>&amp; OPERATIONS</h3>
+                        <p class="text-slate-400 text-xs mb-4">Keep the organization moving.</p>
+                        <ul class="text-slate-300 text-xs space-y-1">
+                            <li>&#8226; Office Staff</li>
+                            <li>&#8226; Office Administration</li>
+                            <li>&#8226; Operations</li>
+                            <li>&#8226; Coordination</li>
+                        </ul>
+                    </div>
+                    <a href="#opportunities" class="mt-5 inline-flex items-center gap-2 border border-[#f9bc60] text-[#f9bc60] hover:bg-[#f9bc60] hover:text-[#0f1f3d] text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300">
+                        EXPLORE ROLES &#8594;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 4: CURRENT OPPORTUNITIES (Tabbed)
+    =========================== -->
+    <section id="opportunities" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Join The Team</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d] tracking-tight">CURRENT OPPORTUNITIES</h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-1 mb-10">
+                <button id="tab-all" onclick="filterJobs('all')" class="tab-btn active border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">ALL</button>
+                <button id="tab-teaching" onclick="filterJobs('teaching')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">TEACHING</button>
+                <button id="tab-technology" onclick="filterJobs('technology')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">TECHNOLOGY</button>
+                <button id="tab-creative" onclick="filterJobs('creative')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">CREATIVE</button>
+                <button id="tab-marketing" onclick="filterJobs('marketing')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">MARKETING</button>
+                <button id="tab-operations" onclick="filterJobs('operations')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">OPERATIONS</button>
+                <button id="tab-internship" onclick="filterJobs('internship')" class="tab-btn border-b-2 px-5 py-2.5 text-sm font-bold text-slate-500 border-transparent hover:text-[#0f1f3d] transition">INTERNSHIP</button>
+            </div>
+
+            <!-- Job grid -->
+            <div id="jobs-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="technology">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">FULL STACK DEVELOPER</h3>
+                        <span class="bg-blue-100 text-blue-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">TECHNOLOGY</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Build and maintain modern web applications and systems.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 1-3 Years</p>
+                    <button onclick="openModal('Full Stack Developer','technology')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="creative">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">GRAPHICS DESIGNER</h3>
+                        <span class="bg-orange-100 text-orange-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">CREATIVE</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Create visual experiences across digital platforms.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 1-3 Years</p>
+                    <button onclick="openModal('Graphics Designer','creative')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="teaching">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">DANCE TUTOR</h3>
+                        <span class="bg-emerald-100 text-emerald-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">TEACHING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Passionate about dance and teaching young minds.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Part Time &nbsp;|&nbsp; Exp: 0-2 Years</p>
+                    <button onclick="openModal('Dance Tutor','teaching')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="marketing">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">DIGITAL MARKETING MANAGER</h3>
+                        <span class="bg-purple-100 text-purple-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">MARKETING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Plan and execute digital ad campaigns that drive growth.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 2-4 Years</p>
+                    <button onclick="openModal('Digital Marketing Manager','marketing')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="teaching">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">SPOKEN ENGLISH TRAINER</h3>
+                        <span class="bg-emerald-100 text-emerald-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">TEACHING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Help students build confidence and communication skills.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Part Time &nbsp;|&nbsp; Exp: 0-2 Years</p>
+                    <button onclick="openModal('Spoken English Trainer','teaching')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="creative">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">VIDEO EDITOR</h3>
+                        <span class="bg-orange-100 text-orange-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">CREATIVE</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Edit and craft engaging videos for digital platforms.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 1-3 Years</p>
+                    <button onclick="openModal('Video Editor','creative')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="operations">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">OFFICE ADMINISTRATOR</h3>
+                        <span class="bg-slate-100 text-slate-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">OPERATIONS</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Manage office operations and ensure smooth functioning.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 1-3 Years</p>
+                    <button onclick="openModal('Office Administrator','operations')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="marketing">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">CONTENT WRITER</h3>
+                        <span class="bg-purple-100 text-purple-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">MARKETING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Write engaging and impactful content for digital platforms.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Full Time &nbsp;|&nbsp; Exp: 0-2 Years</p>
+                    <button onclick="openModal('Content Writer','marketing')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="internship">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">SOCIAL MEDIA INTERN</h3>
+                        <span class="bg-yellow-100 text-yellow-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">INTERNSHIP</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Assist in social media strategy and content creation.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Internship &nbsp;|&nbsp; 3-6 Months</p>
+                    <button onclick="openModal('Social Media Intern','internship')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="internship">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">WEB DEVELOPMENT INTERN</h3>
+                        <span class="bg-yellow-100 text-yellow-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">INTERNSHIP</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Gain real-world web development experience on live projects.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Internship &nbsp;|&nbsp; 3-6 Months</p>
+                    <button onclick="openModal('Web Development Intern','internship')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="teaching">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">MUSIC &amp; SONG TUTOR</h3>
+                        <span class="bg-emerald-100 text-emerald-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">TEACHING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Teach vocal and instrumental music to enthusiastic students.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Part Time &nbsp;|&nbsp; Exp: 1-3 Years</p>
+                    <button onclick="openModal('Music and Song Tutor','teaching')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+                <div class="role-card job-card bg-white border border-slate-200 rounded-2xl p-5 flex flex-col" data-cat="teaching">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-poppins font-black text-sm text-[#0f1f3d] leading-tight">ART TUTOR</h3>
+                        <span class="bg-emerald-100 text-emerald-700 text-[9px] font-black px-2 py-0.5 rounded-full uppercase tracking-wide">TEACHING</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 flex-1">Nurture creativity and artistic skills in young learners.</p>
+                    <p class="text-xs text-slate-400 mb-4">&#128205; Odisha &nbsp;|&nbsp; Part Time &nbsp;|&nbsp; Exp: 0-2 Years</p>
+                    <button onclick="openModal('Art Tutor','teaching')" class="text-[#0f1f3d] font-black text-xs hover:text-[#f9bc60] transition flex items-center gap-1">VIEW ROLE &#8594;</button>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#apply-cta" class="inline-flex items-center gap-2 bg-[#0f1f3d] hover:bg-[#1a2f55] text-white font-bold px-8 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-md">
+                    VIEW ALL OPENINGS &#8594;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 5: INTERNSHIPS BANNER
+    =========================== -->
+    <section id="internships" class="relative py-16 md:py-20 bg-[#0f1f3d] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1600&q=80"
+                 alt="Internships at Nitya Sundaram Academy"
+                 class="w-full h-full object-cover opacity-20" />
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0f1f3d] via-[#0f1f3d]/90 to-transparent"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                <div class="max-w-xl">
+                    <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Start Before You're Ready</p>
+                    <h2 class="font-poppins font-black text-3xl md:text-5xl text-white leading-tight mb-6">
+                        INTERNSHIPS AT<br/>
+                        <span class="gold-shimmer">NITYA SUNDARAM</span>
+                    </h2>
+                    <p class="text-slate-300 text-base mb-8">Learn by doing. Build real skills. Do real work. Our internship program gives you hands-on experience across education, media, and technology.</p>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">&#127891; Teaching</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">&#128187; Technology</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">&#127912; Content</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">&#128227; Digital Marketing</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">&#127909; Production</span>
+                    </div>
+                    <a href="#apply-cta" class="inline-flex items-center gap-2 bg-[#f9bc60] hover:bg-[#e0a844] text-[#0f1f3d] font-bold px-8 py-3.5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+                        EXPLORE INTERNSHIPS &#8594;
+                    </a>
+                </div>
+
+                <div class="w-full lg:w-[42%] grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 value-card">
+                        <div class="text-2xl mb-3">&#127807;</div>
+                        <h4 class="font-poppins font-bold text-white text-sm mb-1">Curious</h4>
+                        <p class="text-slate-400 text-xs">Always asking "why?" and eager to learn more.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 value-card">
+                        <div class="text-2xl mb-3">&#9889;</div>
+                        <h4 class="font-poppins font-bold text-white text-sm mb-1">Driven</h4>
+                        <p class="text-slate-400 text-xs">Self-motivated, consistent and goal-oriented.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 value-card">
+                        <div class="text-2xl mb-3">&#129309;</div>
+                        <h4 class="font-poppins font-bold text-white text-sm mb-1">Collaborative</h4>
+                        <p class="text-slate-400 text-xs">Bringing energy and ideas to every team.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-5 value-card">
+                        <div class="text-2xl mb-3">&#127919;</div>
+                        <h4 class="font-poppins font-bold text-white text-sm mb-1">Adaptive</h4>
+                        <p class="text-slate-400 text-xs">Comfortable with change and fast learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 6: LEARNING TO LEADERSHIP (Growth Path)
+    =========================== -->
+    <section id="growth-path" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Your Journey Here</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">FROM LEARNING TO LEADERSHIP</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-0 relative">
+                <div class="hidden md:block absolute top-8 left-[calc(8%+24px)] right-[calc(8%+24px)] h-0.5 bg-gradient-to-r from-[#f9bc60] via-[#0f1f3d] to-[#f9bc60] opacity-30 z-0"></div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="relative pulse-ring w-16 h-16 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] font-black text-xl mb-4 shadow-lg">&#128269;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">DISCOVER</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Find your real strengths</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-16 h-16 bg-[#0f1f3d] rounded-full flex items-center justify-center text-[#f9bc60] font-black text-xl mb-4 shadow-lg">&#128218;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">LEARN</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Develop new skills</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-16 h-16 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] font-black text-xl mb-4 shadow-lg">&#128736;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">PRACTICE</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Work on real challenges</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-16 h-16 bg-[#0f1f3d] rounded-full flex items-center justify-center text-[#f9bc60] font-black text-xl mb-4 shadow-lg">&#128161;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">CONTRIBUTE</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Be key to the team</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-16 h-16 bg-[#f9bc60] rounded-full flex items-center justify-center text-[#0f1f3d] font-black text-xl mb-4 shadow-lg">&#128200;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">GROW</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Take greater responsibility</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center flex-1 relative z-10">
+                    <div class="w-16 h-16 bg-[#0f1f3d] rounded-full flex items-center justify-center text-[#f9bc60] font-black text-xl mb-4 shadow-lg">&#127942;</div>
+                    <p class="font-poppins font-black text-sm text-[#0f1f3d] mb-1">LEAD</p>
+                    <p class="text-xs text-slate-500 max-w-[100px]">Create opportunities for others</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 7: LIFE AT NITYA SUNDARAM
+    =========================== -->
+    <section id="life-at-nsa" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-[#f9bc60] font-black text-xs tracking-[0.3em] uppercase mb-3">Our Culture</p>
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-[#0f1f3d]">LIFE AT NITYA SUNDARAM</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div class="relative rounded-2xl overflow-hidden h-40 md:h-56 group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Learn at NSA" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <p class="absolute bottom-4 left-4 text-white font-poppins font-black text-lg">LEARN</p>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-40 md:h-56 group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Create at NSA" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <p class="absolute bottom-4 left-4 text-white font-poppins font-black text-lg">CREATE</p>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-40 md:h-56 group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Collaborate at NSA" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <p class="absolute bottom-4 left-4 text-white font-poppins font-black text-lg">COLLABORATE</p>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden h-40 md:h-56 group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Celebrate at NSA" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <p class="absolute bottom-4 left-4 text-white font-poppins font-black text-lg">CELEBRATE</p>
+                </div>
+            </div>
+
+            <!-- How we hire -->
+            <div class="bg-slate-50 rounded-3xl p-8 md:p-12">
+                <h3 class="font-poppins font-black text-2xl md:text-3xl text-[#0f1f3d] mb-8 text-center">HOW WE HIRE</h3>
+                <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-0">
+                    <div class="flex flex-col md:flex-row items-center gap-4 flex-1">
+                        <div class="w-14 h-14 bg-[#f9bc60] rounded-full flex items-center justify-center font-poppins font-black text-[#0f1f3d] text-xl flex-shrink-0">01</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">APPLY</p>
+                            <p class="text-slate-500 text-xs">Submit your application</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center text-slate-300 text-2xl">&#8594;</div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 flex-1">
+                        <div class="w-14 h-14 bg-[#0f1f3d] rounded-full flex items-center justify-center font-poppins font-black text-[#f9bc60] text-xl flex-shrink-0">02</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">REVIEW</p>
+                            <p class="text-slate-500 text-xs">Team evaluates your profile</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center text-slate-300 text-2xl">&#8594;</div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 flex-1">
+                        <div class="w-14 h-14 bg-[#f9bc60] rounded-full flex items-center justify-center font-poppins font-black text-[#0f1f3d] text-xl flex-shrink-0">03</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">INTERVIEW</p>
+                            <p class="text-slate-500 text-xs">Display your skills &amp; passion</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center text-slate-300 text-2xl">&#8594;</div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 flex-1">
+                        <div class="w-14 h-14 bg-[#0f1f3d] rounded-full flex items-center justify-center font-poppins font-black text-[#f9bc60] text-xl flex-shrink-0">04</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">SELECT</p>
+                            <p class="text-slate-500 text-xs">We find the right match</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center text-slate-300 text-2xl">&#8594;</div>
+                    <div class="flex flex-col md:flex-row items-center gap-4 flex-1">
+                        <div class="w-14 h-14 bg-[#f9bc60] rounded-full flex items-center justify-center font-poppins font-black text-[#0f1f3d] text-xl flex-shrink-0">05</div>
+                        <div>
+                            <p class="font-bold text-[#0f1f3d] text-sm">JOIN</p>
+                            <p class="text-slate-500 text-xs">Welcome to the NSA family!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+         SEGMENT 8: SEND YOUR RESUME (Apply CTA)
+    =========================== -->
+    <section id="apply-cta" class="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-[#0f1f3d] relative overflow-hidden">
+        <div class="absolute top-8 right-8 dots-bg w-36 h-36 opacity-20 rounded-xl hidden md:block"></div>
+        <div class="absolute bottom-8 left-8 dots-bg w-24 h-24 opacity-10 rounded-xl hidden md:block"></div>
+
+        <div class="max-w-4xl mx-auto relative">
+            <div class="bg-[#f9bc60]/10 border border-[#f9bc60]/30 rounded-2xl p-5 mb-10 text-center">
+                <p class="text-[#f9bc60] font-bold text-sm">
+                    &#128276; We're always interested in people who love teaching, building, and creating valuable things that drive growth.
+                </p>
+            </div>
+
+            <div class="text-center mb-10">
+                <h2 class="font-poppins font-black text-3xl md:text-5xl text-white leading-tight mb-4">
+                    YOUR ROLE ISN'T HERE?<br/>
+                    <span class="gold-shimmer">SEND YOUR RESUME.</span>
+                </h2>
+                <p class="text-slate-300 text-base">We review all applications and reach out when the right opportunity comes up.</p>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-3xl p-8 md:p-10">
+                <form id="resume-form" onsubmit="submitResume(event)" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-white/70 text-xs font-bold mb-2 tracking-widest uppercase">Full Name *</label>
+                            <input type="text" id="applicant-name" required placeholder="Your full name"
+                                   class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#f9bc60] transition" />
+                        </div>
+                        <div>
+                            <label class="block text-white/70 text-xs font-bold mb-2 tracking-widest uppercase">Phone Number *</label>
+                            <input type="tel" id="applicant-phone" required placeholder="+91 XXXXX XXXXX"
+                                   class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#f9bc60] transition" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-white/70 text-xs font-bold mb-2 tracking-widest uppercase">Email Address</label>
+                            <input type="email" id="applicant-email" placeholder="you@example.com"
+                                   class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#f9bc60] transition" />
+                        </div>
+                        <div>
+                            <label class="block text-white/70 text-xs font-bold mb-2 tracking-widest uppercase">Role / Area of Interest *</label>
+                            <select id="applicant-role" required
+                                    class="w-full bg-[#1a2f55] border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#f9bc60] transition">
+                                <option value="">Select a department...</option>
+                                <option>Education and Teaching</option>
+                                <option>Corporate and Technology</option>
+                                <option>Creative and Media</option>
+                                <option>Marketing and Content</option>
+                                <option>Administration and Operations</option>
+                                <option>Internship</option>
+                                <option>Open / Any Role</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-white/70 text-xs font-bold mb-2 tracking-widest uppercase">Tell Us About Yourself</label>
+                        <textarea id="applicant-message" rows="4" placeholder="Share your experience, skills, and why you'd be a great fit at Nitya Sundaram Academy..."
+                                  class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#f9bc60] transition resize-none"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <button type="submit" id="submit-resume-btn"
+                                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#f9bc60] hover:bg-[#e0a844] text-[#0f1f3d] font-black px-8 py-3.5 rounded-xl transition-all duration-300 hover:-translate-y-0.5 shadow-lg text-sm">
+                            SEND YOUR RESUME
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+                        </button>
+                        <p class="text-slate-400 text-xs text-center sm:text-left">
+                            Or email us: <a href="mailto:info@nityasundaramacademy.com" class="text-[#f9bc60] hover:underline">info@nityasundaramacademy.com</a>
+                        </p>
+                    </div>
+                    <div id="form-success" class="hidden text-center py-4">
+                        <p class="text-[#f9bc60] font-bold text-sm">&#9989; Your application has been sent via WhatsApp! We'll be in touch soon.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">About Us</h3>
+                    <p class="text-black text-sm leading-relaxed mb-4">Nitya Sundaram Academy is dedicated to providing holistic education and personality development for students.</p>
+                    <div class="flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-black hover:text-[#f9bc60] transition text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-black hover:text-[#f9bc60] transition text-sm">About Us</a></li>
+                        <li><a href="courses.html" class="text-black hover:text-[#f9bc60] transition text-sm">Courses</a></li>
+                        <li><a href="events.html" class="text-black hover:text-[#f9bc60] transition text-sm">Events</a></li>
+                        <li><a href="gallery.html" class="text-black hover:text-[#f9bc60] transition text-sm">Gallery</a></li>
+                        <li><a href="carrier.html" class="text-[#f9bc60] font-bold text-sm">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Career Departments</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#departments" class="text-black hover:text-[#f9bc60] transition text-sm">Education &amp; Teaching</a></li>
+                        <li><a href="#departments" class="text-black hover:text-[#f9bc60] transition text-sm">Corporate &amp; Technology</a></li>
+                        <li><a href="#departments" class="text-black hover:text-[#f9bc60] transition text-sm">Creative &amp; Media</a></li>
+                        <li><a href="#departments" class="text-black hover:text-[#f9bc60] transition text-sm">Marketing &amp; Content</a></li>
+                        <li><a href="#internships" class="text-black hover:text-[#f9bc60] transition text-sm">Internships</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Contact Us</h3>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Uttareswar, Soro, Balasore, Odisha<br/>(Upper Floor of Axis Bank, NH-16)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <div>
+                                <a href="tel:+918637200635" class="hover:text-[#f9bc60] transition block">+91 8637200635</a>
+                                <a href="tel:+917735481329" class="hover:text-[#f9bc60] transition block">+91 7735481329</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:info@nityasundaramacademy.com" class="hover:text-[#f9bc60] transition break-all">info@nityasundaramacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-black">&#169; 2026 Nitya Sundaram Academy. All rights reserved.</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Privacy Policy</a>
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Terms of Service</a>
+                        <a href="#" class="text-black hover:text-[#f9bc60] transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ROLE DETAIL MODAL -->
+    <div id="apply-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function filterJobs(cat) {
+            document.querySelectorAll('.job-card').forEach(card => {
+                card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            const active = document.getElementById('tab-' + cat);
+            if (active) active.classList.add('active');
+        }
+
+        const roleDetails = {
+            'Full Stack Developer':        { responsibilities: ['Build and maintain NSA web applications','Collaborate with design and content teams','Implement new features and fix bugs'],             requirements: ['Proficiency in HTML, CSS, JavaScript','Knowledge of a backend framework','Experience: 1-3 years'] },
+            'Graphics Designer':           { responsibilities: ['Design social media visuals and banners','Maintain brand consistency across platforms','Create UI/UX mockups'],                          requirements: ['Proficiency in Canva, Adobe Suite or Figma','Strong visual sense','Experience: 1-3 years'] },
+            'Dance Tutor':                 { responsibilities: ['Teach various dance forms to student batches','Plan and execute performances','Maintain discipline and positive energy'],              requirements: ['Expertise in classical or contemporary dance','Teaching experience preferred','Experience: 0-2 years'] },
+            'Digital Marketing Manager':   { responsibilities: ['Plan and run paid ad campaigns','Manage SEO, email and social media strategies','Analyze data and optimize for ROI'],                 requirements: ['Experience with Meta Ads, Google Ads','Data-driven mindset','Experience: 2-4 years'] },
+            'Spoken English Trainer':      { responsibilities: ['Conduct spoken English batches','Create engaging lesson plans','Track and improve student progress'],                                  requirements: ['Strong command of English','Prior teaching or training experience','Experience: 0-2 years'] },
+            'Video Editor':                { responsibilities: ['Edit reels, promotional videos, and course content','Color grading and audio mixing','Manage video publishing workflow'],              requirements: ['Proficiency in Premiere Pro or DaVinci Resolve','Creative storytelling sense','Experience: 1-3 years'] },
+            'Office Administrator':        { responsibilities: ['Handle daily office operations','Coordinate with teams and manage schedules','Maintain records and documentation'],                   requirements: ['Good organizational skills','Proficiency in MS Office','Experience: 1-3 years'] },
+            'Content Writer':              { responsibilities: ['Write blogs, social captions and ad copy','Research topics and maintain content calendar','Collaborate with the design team'],          requirements: ['Excellent written English','SEO awareness is a plus','Experience: 0-2 years'] },
+            'Social Media Intern':         { responsibilities: ['Assist in social media strategy','Create and schedule posts','Monitor engagement and analytics'],                                      requirements: ['Familiarity with Instagram, Facebook, YouTube','Creative and self-motivated','Duration: 3-6 months'] },
+            'Web Development Intern':      { responsibilities: ['Work on live web projects','Assist with bug fixes and feature development','Learn from the senior dev team'],                         requirements: ['Basic knowledge of HTML, CSS, JS','Eagerness to learn','Duration: 3-6 months'] },
+            'Music and Song Tutor':        { responsibilities: ['Teach vocal and instrumental music','Prepare students for performances','Develop lesson plans by skill level'],                       requirements: ['Expertise in classical or contemporary music','Passion for teaching','Experience: 1-3 years'] },
+            'Art Tutor':                   { responsibilities: ['Teach painting, drawing and craft','Guide students in creative expression','Organize art exhibitions'],                               requirements: ['Portfolio of artwork required','Prior teaching experience preferred','Experience: 0-2 years'] },
+        };
+
+        const defaultDetail = {
+            responsibilities: ['Work collaboratively with the NSA team','Contribute innovative ideas','Attend regular briefings'],
+            requirements: ['Passion for education and growth','Good communication skills','Willingness to learn'],
+        };
+
+        const catColors = {
+            teaching:'bg-emerald-100 text-emerald-700', technology:'bg-blue-100 text-blue-700',
+            creative:'bg-orange-100 text-orange-700',   marketing:'bg-purple-100 text-purple-700',
+            operations:'bg-slate-100 text-slate-700',   internship:'bg-yellow-100 text-yellow-700',
+        };
+
+        function openModal(role, cat) {
+            const details = roleDetails[role] || defaultDetail;
+            const colorClass = catColors[cat] || 'bg-slate-100 text-slate-700';
+            const waMsg = encodeURIComponent('Hello Nitya Sundaram Academy! I am interested in the ' + role + ' position. Please share more details.');
+            const waLink = 'https://wa.me/918637200635?text=' + waMsg;
+            document.getElementById('modal-content').innerHTML =
+                '<span class="inline-block ' + colorClass + ' text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest mb-4">' + cat.toUpperCase() + '</span>' +
+                '<h3 class="font-poppins font-black text-2xl text-[#0f1f3d] mb-6">' + role + '</h3>' +
+                '<div class="mb-5"><p class="font-bold text-[#0f1f3d] text-sm mb-2">Key Responsibilities</p><ul class="space-y-1.5">' +
+                details.responsibilities.map(r => '<li class="text-slate-600 text-sm flex items-start gap-2"><span class="text-[#f9bc60] font-black mt-0.5">&#8250;</span>' + r + '</li>').join('') +
+                '</ul></div><div class="mb-8"><p class="font-bold text-[#0f1f3d] text-sm mb-2">Requirements</p><ul class="space-y-1.5">' +
+                details.requirements.map(r => '<li class="text-slate-600 text-sm flex items-start gap-2"><span class="text-[#f9bc60] font-black mt-0.5">&#8250;</span>' + r + '</li>').join('') +
+                '</ul></div>' +
+                '<div class="flex flex-col sm:flex-row gap-3">' +
+                '<a href="' + waLink + '" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-[#0f1f3d] hover:bg-[#1a2f55] text-white font-bold px-6 py-3 rounded-xl transition text-sm">Apply via WhatsApp &#8594;</a>' +
+                '<a href="#apply-cta" onclick="closeModal()" class="flex-1 flex items-center justify-center gap-2 border-2 border-[#0f1f3d] text-[#0f1f3d] hover:bg-[#0f1f3d] hover:text-white font-bold px-6 py-3 rounded-xl transition text-sm">Send Resume Form</a>' +
+                '</div>';
+            document.getElementById('apply-modal').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('apply-modal').classList.remove('open');
+        }
+
+        document.getElementById('apply-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        function submitResume(e) {
+            e.preventDefault();
+            const name    = document.getElementById('applicant-name').value.trim();
+            const phone   = document.getElementById('applicant-phone').value.trim();
+            const email   = document.getElementById('applicant-email').value.trim();
+            const role    = document.getElementById('applicant-role').value;
+            const message = document.getElementById('applicant-message').value.trim();
+            const text = '*Career Application - Nitya Sundaram Academy*\n\n*Name:* ' + name + '\n*Phone:* ' + phone + '\n*Email:* ' + (email || 'Not provided') + '\n*Role/Dept:* ' + role + '\n*About:* ' + (message || 'Not provided');
+            window.open('https://wa.me/918637200635?text=' + encodeURIComponent(text), '_blank');
+            document.getElementById('form-success').classList.remove('hidden');
+            document.getElementById('resume-form').reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+</html>

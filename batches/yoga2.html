@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Awakening – Sunday Special Batch | Nitya Sundaram Academy</title>
+    <meta name="description" content="Yoga Awakening at Nitya Sundaram Academy. A unique Sunday special program combining Yoga, Meditation and Spiritual Wisdom for students.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-nunito { font-family: 'Nunito', sans-serif; }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Sunset/Sunrise Gradients */
+        .gradient-text-sunrise {
+            background: linear-gradient(to right, #166534, #d97706, #b45309);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .bg-sunrise {
+            background: linear-gradient(135deg, rgba(254, 243, 199, 0.9) 0%, rgba(254, 215, 170, 0.6) 50%, rgba(187, 247, 208, 0.4) 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 40px rgba(21, 128, 61, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(21, 128, 61, 0.15);
+        }
+
+        /* Abstract Lotus Background Pattern */
+        .lotus-pattern {
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0 C60 30 80 40 100 50 C80 60 60 70 50 100 C40 70 20 60 0 50 C20 40 40 30 50 0 Z" fill="rgba(21,128,61,0.03)"/></svg>');
+            background-size: 60px 60px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .sun-ray {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent 0deg 10deg, rgba(252, 211, 77, 0.2) 10deg 20deg, transparent 20deg 30deg);
+            animation: rotate-rays 60s linear infinite;
+            transform-origin: center;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        @keyframes rotate-rays {
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body class="font-nunito text-slate-800 bg-[#fdfbf7] selection:bg-green-200 selection:text-green-900 overflow-x-hidden">
+
+<!-- Top Contact Bar -->
+    <div class="bg-slate-200 text-black font-bold py-0.5 md:py-2 px-4">
+        <div
+            class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-6">
+            <!-- Contact Info -->
+            <div class="flex  items-center justify-center gap-3 md:gap-6">
+                <a href="tel:+919876543210" class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">+91 98765 43210</span>
+                </a>
+                <a href="mailto:info@nityasundaramacademy.com"
+                    class="flex items-center gap-2 hover:text-[#f9bc60] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-[9px] md:text-sm ">info@nityasundaram.com</span>
+                </a>
+            </div>
+
+            <!-- Quick Links & Social Icons -->
+            <div class="flex items-center  gap-4 md:gap-6">
+                <!-- Quick Links -->
+
+                <div class="hidden md:flex items-center gap-4 text-xs md:text-sm">
+                    <a href="#" class="hover:text-[#f9bc60] transition">Admissions</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Gallery</a>
+                    <span class="text-gray-500">|</span>
+                    <a href="#" class="hover:text-[#f9bc60] transition">Careers</a>
+                </div>
+
+                <!-- Social Icons -->
+
+                <div class="flex items-center gap-3">
+                    <h1 class="text-sm md:text-sm">Follow on :</h1>
+                    <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="hover:text-[#f9bc60] transition"
+                        aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50  w-full border-slate-200 bg-white backdrop-blur">
+
+
+
+
+        <div class="flex flex-col md:flex-row  md:items-center justify-between  md:py-2">
+            <a href="#" class="flex items-center md:items-start md:h-20  z-10 md:gap-3 px-1 md:px-2">
+                <img src="../images/Remove background project.png" alt="Logo"
+                    class=" size-16 md:size-22 rounded-full object-cover mx-1 ring-emerald-200" />
+                <div class="my-1 md:my-0 text-center md:text-start w-full">
+                    <h1 class="text-3xl  font-extrabold tracking-wide text-emerald-700 md:text-5xl font-poppins"
+                        id="nameBox">
+                        NITYA SUNDARAM
+                    </h1>
+
+                    <p class="text-sm font-bold text-black md:text-sm md:mt-2">
+                        UTTARESWAR , SORO , BALASORE
+                    </p>
+                </div>
+            </a>
+
+            <nav class=" bg-emerald-50 md:bg-white   w-full  md:w-3xl  ">
+                <ul
+                    class="flex items-center justify-around text-xs font-bold py-2  text-emerald-700 md:gap-3 md:text-lg xl:text-xl font-poppins ">
+                    <li class=" ">
+                        <a href="../index.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="../courses.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="../events.html" class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../gallery.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] transition  ">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="../productions.html"
+                            class="rounded-lg px-1 py-2 hover:text-[#f9bc60] bg-gradient-to-r from-pink-500 via-yellow-500 to-purple-500  bg-clip-text text-transparent animate-gradient  ">PRODUCTIONS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══ HERO BANNER ═══ -->
+    <section class="relative w-full min-h-[85vh] flex items-center overflow-hidden bg-sunrise lotus-pattern pt-10 pb-20 md:pt-0">
+        
+        <div class="sun-ray"></div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fdfbf7] to-transparent z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-20 w-full">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+                
+                <!-- Hero Content -->
+                <div class="w-full lg:w-[55%] text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-2 text-[10px] text-green-800 mb-6 tracking-widest uppercase font-bold">
+                        <a href="../index.html" class="hover:text-amber-600 transition">Home</a>
+                        <span>•</span>
+                        <a href="../courses.html" class="hover:text-amber-600 transition">Courses</a>
+                        <span>•</span>
+                        <span class="text-amber-600">Yoga Awakening</span>
+                    </div>
+
+                    <div class="inline-flex items-center mb-6">
+                        <span class="bg-white/60 backdrop-blur-sm border border-amber-200 text-green-900 text-xs font-bold tracking-[0.2em] uppercase px-5 py-2 rounded-full shadow-sm">
+                            Sunday Special Batch
+                        </span>
+                    </div>
+
+                    <h1 class="text-6xl md:text-7xl lg:text-[100px] font-black font-cinzel leading-[0.9] tracking-tighter mb-4">
+                        <span class="text-green-900 block">YOGA</span>
+                        <span class="text-amber-500 block mt-2">AWAKENING</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-green-900/80 font-bold mb-8 mt-6 italic">
+                        Awaken Your Inner Potential. <br class="hidden md:block">
+                        Build Character. Transform Life.
+                    </p>
+                    
+                    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+                        <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20want%20to%20enroll%20in%20the%20Yoga%20Awakening%20batch." target="_blank"
+                           class="inline-flex items-center justify-center gap-3 bg-green-800 text-amber-100 font-bold px-8 py-4 rounded-full shadow-[0_10px_20px_rgba(21,128,61,0.3)] hover:shadow-[0_15px_30px_rgba(21,128,61,0.5)] hover:-translate-y-1 hover:bg-green-700 transition-all duration-300 uppercase tracking-widest text-sm w-full sm:w-auto border border-green-600">
+                            <span>Begin Your Journey</span>
+                            <span class="text-xl">🌿</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-10 inline-block bg-white/50 backdrop-blur-md px-6 py-3 rounded-2xl border border-white">
+                        <p class="text-sm font-bold text-green-900 uppercase tracking-widest">Dedicated to building students healthy & character building</p>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="w-full lg:w-[45%] relative mt-10 lg:mt-0">
+                    <div class="absolute inset-0 bg-amber-300 rounded-full blur-[100px] opacity-40 animate-pulse"></div>
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80" alt="Student Meditating at Sunrise" class="relative z-20 w-full object-cover rounded-[3rem] shadow-2xl border-8 border-white/80 animate-float">
+                    
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-white rounded-full shadow-xl flex items-center justify-center z-30 animate-float" style="animation-delay: 2s;">
+                        <span class="text-5xl text-amber-500">🕉️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ICONS STRIP ═══ -->
+    <section class="relative z-20 -mt-10">
+        <div class="max-w-7xl mx-auto px-4 reveal-up">
+            <div class="bg-white rounded-[2rem] shadow-2xl p-6 md:p-8 flex flex-wrap justify-center lg:justify-between gap-6 lg:gap-4 border border-green-50">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-2xl text-green-700">💚</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase">Health</h3>
+                        <p class="text-slate-500 text-xs font-semibold">Strong Body, Healthy Life</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block w-px h-10 bg-slate-200"></div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-2xl text-orange-600">🎯</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase">Discipline</h3>
+                        <p class="text-slate-500 text-xs font-semibold">Focus & Self-Control</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block w-px h-10 bg-slate-200"></div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl text-blue-600">🪷</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase">Values</h3>
+                        <p class="text-slate-500 text-xs font-semibold">Moral & Ethical Living</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block w-px h-10 bg-slate-200"></div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-2xl text-purple-600">📖</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase">Wisdom</h3>
+                        <p class="text-slate-500 text-xs font-semibold">Knowledge & Spiritual Growth</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block w-px h-10 bg-slate-200"></div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-2xl text-amber-600">🌅</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase">Awakening</h3>
+                        <p class="text-slate-500 text-xs font-semibold">Inner Peace, Higher Purpose</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT THE PROGRAM ═══ -->
+    <section class="py-16 md:py-24 px-4 relative">
+        <div class="max-w-4xl mx-auto text-center reveal-up">
+            <h2 class="text-3xl md:text-5xl font-black text-green-900 font-cinzel mb-8">ABOUT THE PROGRAM</h2>
+            
+            <div class="text-slate-600 text-lg md:text-xl leading-relaxed space-y-6 font-medium">
+                <p>
+                    <strong class="text-green-800 font-bold">Yoga Awakening</strong> is a unique Sunday special program that combines Yoga, Meditation and Spiritual Wisdom to build students physically strong, mentally calm and morally upright.
+                </p>
+                <p class="text-amber-600 font-bold italic text-2xl font-cinzel pt-4">
+                    "A journey towards a healthy body, peaceful mind and a noble character."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROGRAM OBJECTIVES ═══ -->
+    <section class="py-16 bg-white border-y border-green-50 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12 reveal-up">
+                <div class="inline-flex items-center gap-4">
+                    <span class="text-green-600">🌿</span>
+                    <h2 class="text-3xl font-black text-green-900 font-cinzel uppercase tracking-wider">PROGRAM OBJECTIVES</h2>
+                    <span class="text-green-600">🌿</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal-up">
+                <div class="bg-green-50 p-6 rounded-3xl text-center border border-green-100 hover:shadow-lg transition">
+                    <div class="text-5xl mb-4 text-green-700">🧘</div>
+                    <p class="text-sm font-extrabold text-slate-800">Build a Healthy Body and Peaceful Mind</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-3xl text-center border border-blue-100 hover:shadow-lg transition">
+                    <div class="text-5xl mb-4 text-blue-700">🧠</div>
+                    <p class="text-sm font-extrabold text-slate-800">Develop Focus, Discipline and Self-Control</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-3xl text-center border border-purple-100 hover:shadow-lg transition">
+                    <div class="text-5xl mb-4 text-purple-700">🛡️</div>
+                    <p class="text-sm font-extrabold text-slate-800">Strengthen Moral Values and Character</p>
+                </div>
+                <div class="bg-orange-50 p-6 rounded-3xl text-center border border-orange-100 hover:shadow-lg transition">
+                    <div class="text-5xl mb-4 text-orange-600">🕉️</div>
+                    <p class="text-sm font-extrabold text-slate-800">Introduce Yogic Wisdom and Indian Spirituality</p>
+                </div>
+                <div class="bg-rose-50 p-6 rounded-3xl text-center border border-rose-100 hover:shadow-lg transition">
+                    <div class="text-5xl mb-4 text-rose-600">👨‍👩‍👧‍👦</div>
+                    <p class="text-sm font-extrabold text-slate-800">Create Responsible, Confident and Compassionate Leaders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WHAT YOU WILL LEARN (4 PILLARS) ═══ -->
+    <section class="py-16 md:py-24 px-4 bg-[#fdfbf7] relative">
+        <div class="absolute inset-0 lotus-pattern opacity-50"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <div class="inline-flex items-center gap-4">
+                    <span class="text-amber-500">✨</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-green-900 font-cinzel uppercase tracking-wider border-b-2 border-amber-400 pb-2">WHAT YOU WILL LEARN</h2>
+                    <span class="text-amber-500">✨</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-up">
+                
+                <!-- Physical Yoga -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col h-full border-t-8 border-t-green-600">
+                    <div class="p-6 text-center bg-green-50/50 border-b border-green-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-sm mb-3">🧘‍♀️</div>
+                        <h3 class="font-black text-green-800 text-lg uppercase tracking-wider">PHYSICAL YOGA</h3>
+                    </div>
+                    <div class="p-6 flex-grow bg-white/50">
+                        <ul class="space-y-4 text-sm text-slate-700 font-bold">
+                            <li class="flex items-start gap-3"><span class="text-green-600 text-lg leading-none">✔</span>Traditional Yogasana</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 text-lg leading-none">✔</span>Surya Namaskar</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 text-lg leading-none">✔</span>Flexibility & Balance Training</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 text-lg leading-none">✔</span>Strength & Endurance Practice</li>
+                            <li class="flex items-start gap-3"><span class="text-green-600 text-lg leading-none">✔</span>Pranayama (Breathing Techniques)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Meditation & Mindfulness -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col h-full border-t-8 border-t-blue-600">
+                    <div class="p-6 text-center bg-blue-50/50 border-b border-blue-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-sm mb-3">🧘‍♂️</div>
+                        <h3 class="font-black text-blue-800 text-lg uppercase tracking-wider">MEDITATION &<br>MINDFULNESS</h3>
+                    </div>
+                    <div class="p-6 flex-grow bg-white/50">
+                        <ul class="space-y-4 text-sm text-slate-700 font-bold">
+                            <li class="flex items-start gap-3"><span class="text-blue-600 text-lg leading-none">✔</span>Guided Meditation</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 text-lg leading-none">✔</span>Concentration Exercises</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 text-lg leading-none">✔</span>Mindfulness Practices</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 text-lg leading-none">✔</span>Stress Management Techniques</li>
+                            <li class="flex items-start gap-3"><span class="text-blue-600 text-lg leading-none">✔</span>Inner Peace & Relaxation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Spiritual Learning -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col h-full border-t-8 border-t-purple-600">
+                    <div class="p-6 text-center bg-purple-50/50 border-b border-purple-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-sm mb-3">🕉️</div>
+                        <h3 class="font-black text-purple-800 text-lg uppercase tracking-wider">SPIRITUAL<br>LEARNING</h3>
+                    </div>
+                    <div class="p-6 flex-grow bg-white/50">
+                        <ul class="space-y-4 text-sm text-slate-700 font-bold">
+                            <li class="flex items-start gap-3"><span class="text-purple-600 text-lg leading-none">✔</span>Introduction to Yogic Philosophy</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 text-lg leading-none">✔</span>Indian Culture & Heritage</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 text-lg leading-none">✔</span>Universal Human Values</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 text-lg leading-none">✔</span>Self-Awareness & Self-Reflection</li>
+                            <li class="flex items-start gap-3"><span class="text-purple-600 text-lg leading-none">✔</span>Gratitude & Positive Living</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Character Building -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col h-full border-t-8 border-t-orange-500">
+                    <div class="p-6 text-center bg-orange-50/50 border-b border-orange-100">
+                        <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-sm mb-3">🧗</div>
+                        <h3 class="font-black text-orange-800 text-lg uppercase tracking-wider">CHARACTER<br>BUILDING</h3>
+                    </div>
+                    <div class="p-6 flex-grow bg-white/50">
+                        <ul class="space-y-4 text-sm text-slate-700 font-bold">
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Discipline & Responsibility</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Respect for Parents, Teachers & Society</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Leadership Skills</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Time Management</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Communication & Confidence</li>
+                            <li class="flex items-start gap-3"><span class="text-orange-500 text-lg leading-none">✔</span>Teamwork & Service Mindset</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BENEFITS STRIP ═══ -->
+    <section class="py-16 px-4 bg-white border-y border-green-100 relative z-20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-black text-center text-green-900 mb-12 font-cinzel uppercase tracking-widest reveal-up">BENEFITS OF THE PROGRAM</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-up">
+                <!-- Physical -->
+                <div class="bg-green-50 rounded-3xl p-8 border border-green-100 hover:shadow-xl transition relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 text-[120px] opacity-10">🧘‍♀️</div>
+                    <h3 class="text-green-800 font-black mb-6 uppercase text-lg tracking-wider text-center bg-white py-2 rounded-full shadow-sm">PHYSICAL BENEFITS</h3>
+                    <ul class="space-y-4 text-sm text-slate-700 font-bold relative z-10">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✔</span>Improves Strength & Flexibility</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✔</span>Enhances Immunity & Stamina</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✔</span>Improves Posture & Balance</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✔</span>Promotes Healthy Growth</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✔</span>Increases Energy Levels</li>
+                    </ul>
+                </div>
+                <!-- Mental -->
+                <div class="bg-blue-50 rounded-3xl p-8 border border-blue-100 hover:shadow-xl transition relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 text-[120px] opacity-10">🧠</div>
+                    <h3 class="text-blue-800 font-black mb-6 uppercase text-lg tracking-wider text-center bg-white py-2 rounded-full shadow-sm">MENTAL BENEFITS</h3>
+                    <ul class="space-y-4 text-sm text-slate-700 font-bold relative z-10">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs">✔</span>Improves Concentration & Memory</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs">✔</span>Reduces Stress & Anxiety</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs">✔</span>Develops Emotional Stability</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs">✔</span>Sharpens Decision-Making Skills</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs">✔</span>Enhances Creativity & Focus</li>
+                    </ul>
+                </div>
+                <!-- Spiritual -->
+                <div class="bg-purple-50 rounded-3xl p-8 border border-purple-100 hover:shadow-xl transition relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 text-[120px] opacity-10">🧘‍♂️</div>
+                    <h3 class="text-purple-800 font-black mb-6 uppercase text-lg tracking-wider text-center bg-white py-2 rounded-full shadow-sm">SPIRITUAL BENEFITS</h3>
+                    <ul class="space-y-4 text-sm text-slate-700 font-bold relative z-10">
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">✔</span>Develops Inner Peace</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">✔</span>Builds Self-Confidence</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">✔</span>Encourages Positive Thinking</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">✔</span>Cultivates Gratitude & Compassion</li>
+                        <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs">✔</span>Promotes Self-Discipline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ LEARNING OUTCOMES & DETAILS ═══ -->
+    <section class="py-16 md:py-24 px-4 bg-[#fdfbf7] relative">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Learning Outcomes -->
+            <div class="mb-16 reveal-up">
+                <div class="text-center mb-10">
+                    <h3 class="inline-block px-8 py-3 bg-green-900 text-white rounded-full text-2xl font-black font-cinzel tracking-widest shadow-lg">LEARNING OUTCOMES</h3>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">✨</div>
+                        <p class="text-xs font-bold text-slate-700">Develop a healthy body and disciplined lifestyle</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">🧠</div>
+                        <p class="text-xs font-bold text-slate-700">Build confidence and emotional resilience</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">📖</div>
+                        <p class="text-xs font-bold text-slate-700">Improve concentration and academic performance</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">⚖️</div>
+                        <p class="text-xs font-bold text-slate-700">Understand the importance of ethics and values</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">🧘</div>
+                        <p class="text-xs font-bold text-slate-700">Practice yoga and meditation independently</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-green-50">
+                        <div class="text-4xl mb-4 text-green-600">❤️</div>
+                        <p class="text-xs font-bold text-slate-700">Become responsible, compassionate and confident</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Column Info -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal-up">
+                
+                <!-- Who Can Join -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl border border-amber-100 relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-32 h-32 bg-amber-100 rounded-bl-full opacity-50"></div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-slate-100 pb-4 relative z-10">
+                        <h3 class="text-2xl font-black text-blue-900 font-cinzel">WHO CAN JOIN?</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm font-bold text-slate-700 relative z-10">
+                        <li class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl"><span class="text-2xl">🎓</span>School Students</li>
+                        <li class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl"><span class="text-2xl">🧑</span>Teenagers</li>
+                        <li class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl"><span class="text-2xl">🎒</span>College Students</li>
+                        <li class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl"><span class="text-2xl">🌱</span>Beginners</li>
+                        <li class="flex items-center gap-4 bg-slate-50 p-3 rounded-xl"><span class="text-2xl">👨‍👩‍👧‍👦</span>Parents (Optional Family Participation)</li>
+                    </ul>
+                </div>
+
+                <!-- Batch Information -->
+                <div class="bg-green-900 rounded-3xl p-8 shadow-xl text-white relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-48 h-48 bg-green-800 rounded-bl-full opacity-50"></div>
+                    <div class="flex items-center gap-3 mb-6 border-b border-green-700 pb-4 relative z-10">
+                        <h3 class="text-2xl font-black text-white font-cinzel">BATCH INFO</h3>
+                    </div>
+                    <div class="space-y-5 relative z-10 text-sm">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center text-xl">📅</div>
+                            <div>
+                                <p class="text-green-300 text-xs font-bold uppercase tracking-widest">Batch Name</p>
+                                <p class="font-extrabold text-lg">Yoga Awakening</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center text-xl">🕒</div>
+                            <div>
+                                <p class="text-green-300 text-xs font-bold uppercase tracking-widest">Schedule</p>
+                                <p class="font-bold text-lg">Every Sunday</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center text-xl">⏳</div>
+                            <div>
+                                <p class="text-green-300 text-xs font-bold uppercase tracking-widest">Duration</p>
+                                <p class="font-bold text-lg">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center text-xl">🧘</div>
+                            <div>
+                                <p class="text-green-300 text-xs font-bold uppercase tracking-widest">Mode</p>
+                                <p class="font-bold">Practical + Interactive + Spiritual Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Promise & Quotes Section -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 reveal-up">
+                <div class="bg-amber-50 rounded-2xl p-8 border border-amber-200">
+                    <h3 class="font-black text-amber-900 mb-4 uppercase tracking-wider text-sm">Our Promise to Students</h3>
+                    <p class="text-amber-800 font-medium text-sm leading-relaxed">
+                        We are committed to nurturing every student with care, guidance and inspiration so that they grow into healthy, disciplined, value-based and successful individuals.
+                    </p>
+                </div>
+                <div class="bg-green-50 rounded-2xl p-8 border border-green-200 flex items-center relative overflow-hidden">
+                    <div class="absolute -left-4 -top-4 text-7xl text-green-200 font-serif">"</div>
+                    <p class="text-green-900 font-bold text-lg font-cinzel italic text-center w-full relative z-10">
+                        "A strong body, a calm mind and a pure heart are the foundation of a great life."
+                    </p>
+                    <div class="absolute -right-4 -bottom-10 text-7xl text-green-200 font-serif">"</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ═══ MOTTO / CTA STRIP ═══ -->
+    <section class="py-20 px-4 bg-green-950 text-center relative overflow-hidden border-t-8 border-amber-500">
+        
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-black font-cinzel tracking-widest mb-10 text-amber-400">
+                AWAKEN THE YOGI WITHIN YOU.<br>AWAKEN A BETTER YOU.
+            </h2>
+            <p class="text-green-100 text-lg md:text-xl font-semibold mb-10 max-w-3xl mx-auto">
+                JOIN US EVERY SUNDAY AND BEGIN YOUR TRANSFORMATION!
+            </p>
+            
+            <a href="https://wa.me/918637200635?text=Hello%20Nitya%20Sundaram%20Academy!%20I%20want%20to%20enroll%20in%20the%20Yoga%20Awakening%20batch." target="_blank"
+               class="inline-block bg-amber-500 text-green-950 font-black px-12 py-5 rounded-full shadow-2xl hover:bg-amber-400 hover:scale-105 transition-all duration-300 uppercase tracking-widest">
+                Start Your Journey
+            </a>
+            
+            <div class="mt-16 text-amber-200/60 font-cinzel italic text-xl">
+                "Yoga is the journey of the self, through the self, to the self."<br>
+                <span class="text-sm font-nunito font-semibold mt-2 block">– The Bhagavad Gita</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-white text-black pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">About Us</h3>
+                    <p class="text-black text-sm leading-relaxed mb-4">
+                        Nitya Sundaram Academy is dedicated to providing holistic education and personality development
+                        for students.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="hover:text-[#f9bc60] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-black hover:text-[#f9bc60] transition text-sm">Home</a>
+                        </li>
+                        <li><a href="../about.html" class="text-black hover:text-[#f9bc60] transition text-sm">About Us</a>
+                        </li>
+                        <li><a href="../programs.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Programs</a></li>
+                        <li><a href="../courses.html"
+                                class="text-black hover:text-[#f9bc60] transition text-sm">Courses</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Events</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Personality
+                                Development</a></li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Career Guidance</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Skill Training</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Academic Support</a>
+                        </li>
+                        <li><a href="#" class="text-black hover:text-[#f9bc60] transition text-sm">Mentorship
+                                Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-[#f9bc60]">Contact Us</h3>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 flex-shrink-0" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Uttareswar, Soro, Balasore, Odisha <br>(Upper Floor of Axis Bank, NH-16)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div>
+                                <a href="tel:+918637200635" class="hover:text-[#f9bc60] transition block">+91
+                                    8637200635</a>
+                                <a href="tel:+917735481329" class="hover:text-[#f9bc60] transition block">+91
+                                    7735481329</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:info@nityasundaramacademy.com"
+                                class="hover:text-[#f9bc60] transition break-all">info@nityasundaramacademy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-600 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-black">
+                        &copy; 2026 Nitya Sundaram Academy. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Privacy Policy</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Terms of Service</a>
+                        <a href="#" class=" text-black hover:text-[#f9bc60] transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal-up');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
+</html>
