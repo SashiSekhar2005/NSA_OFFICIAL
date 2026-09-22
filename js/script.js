@@ -138,3 +138,61 @@ if (document.readyState === 'loading') {
 } else {
     _countersBootstrap();
 }
+
+// ── 4. Lightbox Gallery (index.html only) ─────────────
+const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
+const lightboxContent = document.getElementById('lightbox-content');
+
+if (lightbox && lightboxTriggers.length > 0) {
+    lightboxTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const imgSrc = trigger.getAttribute('href');
+            lightboxImg.src = imgSrc;
+            
+            // Show lightbox
+            lightbox.classList.remove('pointer-events-none', 'opacity-0');
+            lightbox.classList.add('opacity-100');
+            lightboxContent.classList.remove('scale-95');
+            lightboxContent.classList.add('scale-100');
+            
+            // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('opacity-100');
+        lightbox.classList.add('opacity-0', 'pointer-events-none');
+        lightboxContent.classList.remove('scale-100');
+        lightboxContent.classList.add('scale-95');
+        
+        // Restore background scrolling
+        document.body.style.overflow = '';
+        
+        // Clear image src after animation to avoid flicker on next open
+        setTimeout(() => {
+            lightboxImg.src = '';
+        }, 300);
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    
+    // Close on click outside
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('opacity-100')) {
+            closeLightbox();
+        }
+    });
+}
+
