@@ -5,7 +5,7 @@
 
 // ── 1. Animated header text (index.html only) ──────────
 const names = ["NITYA SUNDARAM", "ନିତ୍ୟ ସୁନ୍ଦରମ୍ "];
-const dates  = ["ଉତ୍ତରେଶ୍ୱର, ସୋରୋ, ବାଲେଶ୍ୱର", "UTTARESWAR , SORO , BALASORE"];
+const dates  = ["ଉତ୍ତରେଶ୍ୱର, ସୋରୋ, ବାଲେଶ୍ୱର", "UTTARESWAR , SORA , BALESHWAR"];
 const motos  = ["ସମ୍ପୂର୍ଣ୍ଣ ଶିକ୍ଷା ଏବଂ ବ୍ୟକ୍ତିତ୍ୱ ବିକାଶ ସଂସ୍ଥା", "INSTITUTION OF HOLISTIC EDUCATION AND PERSONALITY DEVELOPMENT"];
 
 let index   = 0;

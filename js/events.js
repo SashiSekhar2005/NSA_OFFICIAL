@@ -38,7 +38,7 @@ const eventsData = [
         description: "Free hands-on computer training for school students and senior citizens. Learn basics of internet, email, and online safety.",
         date: "July 15, 2026",
         time: "9:00 AM – 5:00 PM",
-        location: "Internet Cafe Center, Soro",
+        location: "Internet Cafe Center, SORA",
         capacity: "50+ Participants",
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
         btnColor: "bg-violet-500 hover:bg-violet-600",
@@ -95,7 +95,7 @@ const pastEventsData = [
         category: "Outreach",
         categoryColor: "bg-blue-600",
         time: "9:00 AM – 3:00 PM",
-        location: "Soro Community Center",
+        location: "SORA Community Center",
         capacity: "150+ Participants",
         description: "A community outreach initiative teaching basic computer skills, online banking safety, and smart device usage to local residents.",
         image: "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=800&q=80"
@@ -107,7 +107,7 @@ const pastEventsData = [
         category: "Sports",
         categoryColor: "bg-emerald-600",
         time: "8:00 AM – 5:00 PM",
-        location: "Soro Town Ground",
+        location: "SORA Town Ground",
         capacity: "400+ Competitors",
         description: "A thrilling day of athletic competitions, team sports, and track events promoting physical fitness and team spirit.",
         image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80"
